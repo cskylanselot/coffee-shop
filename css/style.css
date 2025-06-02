@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("../inter/Inter-Regular.woff2") format("woff2");
+  src: url("../inter/Inter-Regular.woff") format("woff");
+  font-weight: 400;
+}
+body {
+}
+.mainContainer {
+  width: 90rem;
+  height: 274.25rem;
+  border: 1px solid red;
+  margin: 0 auto;
+  background-color: #e1d4c9;
+}
+.header {
+  width: 90rem;
+  height: 45.25rem;
+  margin-top: 20px;
+  border: 1px solid green;
+}
+.headerMenu {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+.nav {
+  display: flex;
+  font-size: 2rem;
+  list-style-type: none;
+  gap: 4px;
+  text-align: center;
+  align-self: center;
+  cursor: pointer;
+}
+li {
+  width: 7.313rem;
+  height: 1.75rem;
+  font-size: 1.1rem;
+  font-family: Inter;
+}
+.coffe-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 4.5rem;
+  height: 1.75rem;
+  font-size: 1rem;
+}
+.coffe-menuMenu {
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: Inter;
+  cursor: pointer;
+}
+i {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+.hero {
+  width: 90rem;
+  height: 40.25rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1rem;
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/img-hero.jpg");
+  object-fit: contain;
+  border-radius: 2.5rem;
+}
+.hero-text {
+  width: 33.125rem;
+  height: 27.75rem;
+  color: white;
+  font-size: 2rem;
+}
+.hero-textMain {
+  width: 33.125rem;
+  height: 14.25rem;
+  font-size: 4rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-family: Inter;
+  color: #e1d4c9;
+}
+.bold {
+  color: #b0907a;
+  font-weight: 800;
+  font-style: italic;
+}
+.hero-textSaid {
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  padding-top: 5rem;
+  padding-left: 5rem;
+  font-family: Inter;
+  color: #e1d4c9;
+}
+.heroMenu {
+  width: 12.5rem;
+  height: 4rem;
+  margin-top: 5rem;
+  margin-left: 5rem;
+  background-color: #e1d4c9;
+  border-radius: 2rem;
+  font-size: 1.3rem;
+  font-family: Inter;
+  font-weight: 500;
+  cursor: pointer;
+}
+.slider {
+}
