@@ -18,13 +18,15 @@ body {
 .header {
   width: 90rem;
   height: 45.25rem;
-  margin-top: 20px;
 }
 .headerMenu {
   display: flex;
   justify-content: space-between;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  padding-top: 20px;
+}
+.video {
 }
 .nav {
   display: flex;
@@ -47,12 +49,18 @@ li {
   width: 4.5rem;
   height: 1.75rem;
   font-size: 1rem;
+  gap: 0.5rem;
 }
 .coffe-menuMenu {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: Inter;
   cursor: pointer;
+}
+.coffe-menu:hover {
+  width: 4rem;
+  border-bottom: 1px solid #403f3d;
+  transition: 1s;
 }
 .fa-mug-hot {
   margin-top: 8px;
@@ -65,19 +73,27 @@ li {
   padding-right: 2.5rem;
   padding-top: 1rem;
   position: relative;
+  overflow: hidden;
 }
-.hero-img {
+.videoMain {
   width: 100%;
   height: 100%;
-  background-image: url("../img/img-hero.jpg");
-  object-fit: contain;
+  position: relative;
+}
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
   border-radius: 2.5rem;
+  z-index: 1;
 }
 .hero-text {
   width: 33.125rem;
   height: 27.75rem;
   color: white;
-  font-size: 2rem;
+  position: absolute;
+  z-index: 2;
 }
 .hero-textMain {
   width: 33.125rem;
@@ -112,6 +128,21 @@ li {
   font-family: Inter;
   font-weight: 500;
   cursor: pointer;
+}
+.heroMenuMain {
+  display: flex;
+  justify-content: center;
+}
+.heroMenuText {
+  align-self: center;
+}
+.heroMenu .fa-mug-hot {
+  margin-bottom: 0.5rem;
+  opacity: 0;
+}
+.heroMenu:hover .fa-mug-hot {
+  transition: 1s;
+  opacity: 1;
 }
 .slider {
   width: 90rem;
@@ -196,6 +227,19 @@ li {
   margin-left: 2.5rem;
   position: absolute;
   top: 23rem;
+  cursor: pointer;
+}
+.fa-arrow-left {
+  font-size: 1rem;
+  color: black;
+}
+.arrowLeft:hover {
+  background-color: #665f55;
+  transition: 1s;
+}
+.arrowLeft:hover .fa-arrow-left {
+  color: #e1d4c9;
+  transition: 1s;
 }
 .arrowRight {
   width: 3.75rem;
@@ -206,14 +250,19 @@ li {
   position: absolute;
   right: 0;
   top: 23rem;
-}
-.fa-arrow-left {
-  font-size: 1rem;
-  color: black;
+  cursor: pointer;
 }
 .fa-arrow-right {
   font-size: 1rem;
   color: black;
+}
+.arrowRight:hover {
+  background-color: #665f55;
+  transition: 1s;
+}
+.arrowRight:hover .fa-arrow-right {
+  color: #e1d4c9;
+  transition: 1s;
 }
 .controls {
   width: 9rem;
@@ -264,24 +313,51 @@ li {
   width: 41.25rem;
   height: 36.875rem;
   border-radius: 1.25rem;
+  background-image: url("../img/about-1.jpg");
+  background-size: 110%;
+  background-position: center;
+  transition: background-size 1s ease;
+}
+.aboutImg1:hover {
+  background-size: 100%;
 }
 .aboutImg2 {
   margin-top: 1.25rem;
   width: 41.25rem;
   height: 26.875rem;
   border-radius: 1.25rem;
+  background-image: url("../img/about-2.jpg");
+  background-size: 110%;
+  background-position: center;
+  transition: background-size 1s ease;
+}
+.aboutImg2:hover {
+  background-size: 100%;
 }
 .aboutImg3 {
   width: 41.25rem;
   height: 26.875rem;
   border-radius: 1.25rem;
-  object-fit: cover;
+  background-image: url("../img/about-3.jpg");
+  background-size: 110%;
+  background-position: center;
+  transition: background-size 1s ease;
+}
+.aboutImg3:hover {
+  background-size: 100%;
 }
 .aboutImg4 {
   margin-top: 1.25rem;
   width: 41.25rem;
   height: 36.875rem;
   border-radius: 1.25rem;
+  background-image: url("../img/about-4.jpg");
+  background-size: 110%;
+  background-position: center;
+  transition: background-size 1s ease;
+}
+.aboutImg4:hover {
+  background-size: 100%;
 }
 .mobileApp {
   width: 90rem;
@@ -367,12 +443,53 @@ li {
   font-size: 1rem;
   color: #403f3d;
 }
+.buttonApp:hover {
+  background-color: #665f55;
+  transition: 1s;
+  cursor: context-menu;
+}
+.buttonApp:hover .fa-apple {
+  color: #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
+}
+.buttonApp:hover .buttonAppText {
+  color: #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
+}
+.buttonApp:hover .buttonAppText1 {
+  color: #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
+}
 .buttonGoogle {
   width: 12.5rem;
   height: 4rem;
   display: flex;
   border: 1px solid black;
   border-radius: 1rem;
+}
+
+.buttonGoogle:hover {
+  background-color: #665f55;
+  transition: 1s;
+  cursor: context-menu;
+}
+.buttonGoogle:hover .buttonGoogleText {
+  color: #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
+}
+.buttonGoogle:hover .buttonGoogleText1 {
+  color: #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
+}
+.buttonGoogle:hover .fa-google-play {
+  color: #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
 }
 .fa-google-play {
   width: 2.25rem;
@@ -410,7 +527,7 @@ li {
 .contactsMain {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 85rem;
   height: 28.125rem;
   border-radius: 2.5rem;
@@ -448,6 +565,10 @@ li {
   justify-content: center;
   align-items: center;
 }
+.fa-twitter:hover {
+  background-color: #e1d4c9;
+  transition: 1s;
+}
 .fa-instagram {
   width: 3.75rem;
   height: 3.75rem;
@@ -458,6 +579,10 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.fa-instagram:hover {
+  background-color: #e1d4c9;
+  transition: 1s;
 }
 .fa-facebook-f {
   width: 3.75rem;
@@ -470,9 +595,14 @@ li {
   justify-content: center;
   align-items: center;
 }
+.fa-facebook-f:hover {
+  background-color: #e1d4c9;
+  transition: 1s;
+}
 .contactsInfo {
   width: 33.125rem;
   height: 11.625rem;
+  display: grid;
   gap: 2.5rem;
   align-self: center;
 }
@@ -482,13 +612,86 @@ li {
   font-family: Inter;
   font-size: 1.5rem;
   color: #e1d4c9;
+  margin-bottom: 1.875rem;
 }
 .contactsNumber {
   width: 16.375rem;
   height: 7.25rem;
+  display: grid;
   gap: 1rem;
 }
-.fa-solid {
+.contactsAdressMain {
+  width: 11.375rem;
+  height: 1.75rem;
+  display: grid;
+  gap: 0.25rem;
 }
-.fa-clock-three {
+.contactsAdressContainer {
+  width: 11.375rem;
+  height: 1.5rem;
+  gap: 0.5rem;
+  display: flex;
+}
+.fa-location-dot {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #e1d4c9;
+}
+.contactsAdress {
+  width: 9.625rem;
+  height: 1.5rem;
+  color: #e1d4c9;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.contactsAdressContainer:hover {
+  width: 11.375rem;
+  border-bottom: 1px solid #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
+}
+.containerNumber {
+  width: 10.938rem;
+  height: 1.75rem;
+  gap: 0.5rem;
+  display: flex;
+}
+.fa-phone {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #e1d4c9;
+}
+.mainNumber {
+  width: 9.188rem;
+  height: 1.5rem;
+  color: #e1d4c9;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.containerNumber:hover {
+  width: 11.375rem;
+  border-bottom: 1px solid #e1d4c9;
+  transition: 1s;
+  cursor: context-menu;
+}
+.ContainerWorkedTime {
+  width: 16.375rem;
+  height: 1.75rem;
+  display: flex;
+  gap: 0.25rem;
+}
+.fa-clock {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #e1d4c9;
+}
+.WorkedTime {
+  width: 14.625rem;
+  height: 1.5rem;
+  color: #e1d4c9;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
 }
