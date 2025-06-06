@@ -15,6 +15,8 @@ body {
   margin: 0 auto;
   background-color: #e1d4c9;
 }
+
+/* Header //////////////////////////////////////////////////////////////////////////////*/
 .header {
   width: 90rem;
   height: 45.25rem;
@@ -44,12 +46,19 @@ li {
   font-family: Inter;
 }
 .coffe-menu {
-  display: flex;
   justify-content: space-between;
   width: 4.5rem;
   height: 1.75rem;
   font-size: 1rem;
   gap: 0.5rem;
+}
+.coffe-menuMain {
+  justify-content: space-between;
+  width: 4.5rem;
+  height: 1.75rem;
+  font-size: 1rem;
+  gap: 0.25rem;
+  display: flex;
 }
 .coffe-menuMenu {
   font-size: 1.5rem;
@@ -57,10 +66,22 @@ li {
   font-family: Inter;
   cursor: pointer;
 }
-.coffe-menu:hover {
-  width: 4rem;
-  border-bottom: 1px solid #403f3d;
+.coffe-menuLineMain {
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+}
+.coffe-menuLine {
+  width: 1rem;
+  height: 0.1rem;
+  background-color: #403f3d;
   transition: 1s;
+  opacity: 0;
+  align-self: center;
+}
+.coffe-menu:hover .coffe-menuLine {
+  width: 6rem;
+  opacity: 1;
 }
 .fa-mug-hot {
   margin-top: 8px;
@@ -103,11 +124,13 @@ li {
   padding-left: 5rem;
   font-family: Inter;
   color: #e1d4c9;
+  cursor: context-menu;
 }
 .bold {
   color: #b0907a;
   font-weight: 800;
   font-style: italic;
+  cursor: context-menu;
 }
 .hero-textSaid {
   font-size: 0.8rem;
@@ -116,6 +139,7 @@ li {
   padding-left: 5rem;
   font-family: Inter;
   color: #e1d4c9;
+  cursor: context-menu;
 }
 .heroMenu {
   width: 12.5rem;
@@ -135,19 +159,32 @@ li {
 }
 .heroMenuText {
   align-self: center;
+  margin-left: 2rem;
+  transition: 1s;
 }
 .heroMenu .fa-mug-hot {
   margin-bottom: 0.5rem;
   opacity: 0;
+  transition: 1s;
 }
 .heroMenu:hover .fa-mug-hot {
-  transition: 1s;
   opacity: 1;
+  transition: 1s;
+}
+.heroMenu:hover .heroMenuText {
+  margin-left: 0rem;
+  transition: 1s;
+}
+/* Header END //////////////////////////////////////////////////////////////////////////////*/
+
+/* Первый  main container first //////////////////////////////////////////////////////////////////////////////*/
+.mainFirst {
+  display: none;
 }
 .slider {
   width: 90rem;
   height: 49.938rem;
-  margin-top: 2rem;
+  margin-top: 6.25rem;
   position: relative;
 }
 .sliderText {
@@ -156,6 +193,7 @@ li {
   color: #403f3d;
   font-family: Inter;
   font-weight: 600;
+  cursor: context-menu;
 }
 .sliderContainer {
   display: flex;
@@ -167,7 +205,10 @@ li {
 .sliderMain {
   display: flex;
   width: 90rem;
-  margin-left: -0rem;
+  position: relative;
+  left: 0;
+  transition: 1s;
+  gap: 20rem;
 }
 .coffeeSlider1 {
   margin: 0 auto;
@@ -175,23 +216,17 @@ li {
   height: 45rem;
   justify-content: center;
 }
-.imgSlider {
-  width: 100%;
-}
 .coffeeSlider2 {
   margin: 0 auto;
   width: 30rem;
   height: 45rem;
   justify-content: center;
-
-  transition: 2s ease;
 }
 .coffeeSlider3 {
   margin: 0 auto;
   width: 30rem;
   height: 45rem;
   justify-content: center;
-  transition: 2s ease;
 }
 .coffeeTextSliderMain {
   width: 30rem;
@@ -201,6 +236,7 @@ li {
   font-size: 1.5rem;
   font-family: Inter;
   font-weight: 600;
+  cursor: context-menu;
 }
 .coffeeTextSliderText {
   margin-top: 1.25rem;
@@ -209,6 +245,7 @@ li {
   text-align: center;
   font-family: Inter;
   font-size: 1rem;
+  cursor: context-menu;
 }
 .coffeeTextSliderPriсe {
   margin-top: 1.25rem;
@@ -218,6 +255,7 @@ li {
   font-family: Inter;
   font-size: 1.5rem;
   font-weight: 800;
+  cursor: context-menu;
 }
 .arrowLeft {
   width: 3.75rem;
@@ -269,7 +307,7 @@ li {
   height: 0.5rem;
   font-size: 0.75rem;
   margin: 0 auto;
-  margin-top: 1.25rem;
+  margin-top: 0.75rem;
   display: flex;
   justify-content: space-between;
 }
@@ -282,6 +320,7 @@ li {
 .about {
   width: 90rem;
   height: 82.813rem;
+  margin-top: 6.25rem;
 }
 .aboutMain {
   width: 85rem;
@@ -295,6 +334,7 @@ li {
   font-weight: 600;
   font-size: 3.8rem;
   text-align: justify;
+  cursor: context-menu;
 }
 .aboutImgMain {
   display: flex;
@@ -387,6 +427,7 @@ li {
   font-weight: 600;
   color: #403f3d;
   text-align: justify;
+  cursor: context-menu;
 }
 .offerText {
   margin-top: 2.5rem;
@@ -397,6 +438,7 @@ li {
   font-weight: 400;
   color: #403f3d;
   text-align: justify;
+  cursor: context-menu;
 }
 .offerButtons {
   display: flex;
@@ -446,22 +488,22 @@ li {
 .buttonApp:hover {
   background-color: #665f55;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .buttonApp:hover .fa-apple {
   color: #e1d4c9;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .buttonApp:hover .buttonAppText {
   color: #e1d4c9;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .buttonApp:hover .buttonAppText1 {
   color: #e1d4c9;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .buttonGoogle {
   width: 12.5rem;
@@ -474,22 +516,22 @@ li {
 .buttonGoogle:hover {
   background-color: #665f55;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .buttonGoogle:hover .buttonGoogleText {
   color: #e1d4c9;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .buttonGoogle:hover .buttonGoogleText1 {
   color: #e1d4c9;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .buttonGoogle:hover .fa-google-play {
   color: #e1d4c9;
   transition: 1s;
-  cursor: context-menu;
+  cursor: pointer;
 }
 .fa-google-play {
   width: 2.25rem;
@@ -520,9 +562,149 @@ li {
 }
 .mobileScreens {
 }
+/* Конец main container //////////////////////////////////////////////////////////////////////////////*/
+
+/* Main container second //////////////////////////////////////////////////////////////////////////////*/
+.mainSecond {
+  width: 1440px;
+  height: 1328px;
+  padding: 0 40px 0 40px;
+  border: solid 1px red;
+  margin-top: 20px;
+  /* display: none; */
+}
+.secondContainer {
+  width: 1360px;
+  height: 1328px;
+  border: solid 1px red;
+}
+.offerSecond {
+  width: 1360px;
+  height: 236px;
+  display: grid;
+  justify-content: center;
+}
+.offerSecondText {
+  width: 800px;
+  height: 150px;
+  font-family: Inter;
+  font-size: 60px;
+  text-align: center;
+  font-weight: 600;
+}
+.offerSecondTabsContainer {
+  width: 800px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+}
+.offerSecondTabs {
+  margin-top: 40px;
+  width: 361px;
+  height: 46px;
+  display: flex;
+  margin: 0auto;
+  gap: 16px;
+  justify-content: center;
+}
+.coffeTabsMain {
+  width: 115px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: #665f55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px #c1b6ad;
+  gap: 16px;
+}
+.coffeTabsIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #c1b6ad;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.coffeTabsText {
+  width: 53px;
+  height: 24px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+}
+.teaTabsMain {
+  width: 90px;
+  height: 46px;
+  border-radius: 100px;
+  border: solid 1px #c1b6ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.teaTabsIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #c1b6ad;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.teaTabsText {
+  width: 28px;
+  height: 24px;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+}
+.dessertTabsMain {
+  width: 124px;
+  height: 46px;
+  border-radius: 100px;
+  border: solid 1px #c1b6ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+.dessertTabsIcon {
+  width: 30px;
+  height: 30px;
+  background-color: #c1b6ad;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dessertTabsText {
+  width: 62px;
+  height: 24px;
+  font-size: 16px;
+  font-family: Inter;
+  font-weight: 600;
+}
+.grid {
+  width: 1360px;
+  height: 1052px;
+  gap: 40px;
+  display: flex;
+}
+.coffeGrid {
+  width: 310px;
+  height: 506px;
+  border: 1px solid #c1b6ad;
+}
+
+/* Main container second END //////////////////////////////////////////////////////////////////////////////*/
+
+/* Footer //////////////////////////////////////////////////////////////////////////////*/
 .contacts {
   width: 90rem;
   height: 28.125rem;
+  margin-top: 6.25rem;
 }
 .contactsMain {
   margin: 0 auto;
@@ -546,6 +728,7 @@ li {
   font-size: 3.75rem;
   text-align: justify;
   color: #e1d4c9;
+  cursor: context-menu;
 }
 .contactsOfferSocials {
   width: 12.75rem;
@@ -613,6 +796,7 @@ li {
   font-size: 1.5rem;
   color: #e1d4c9;
   margin-bottom: 1.875rem;
+  cursor: context-menu;
 }
 .contactsNumber {
   width: 16.375rem;
@@ -625,6 +809,7 @@ li {
   height: 1.75rem;
   display: grid;
   gap: 0.25rem;
+  cursor: pointer;
 }
 .contactsAdressContainer {
   width: 11.375rem;
@@ -645,15 +830,28 @@ li {
   font-weight: 400;
   font-size: 1rem;
 }
-.contactsAdressContainer:hover {
+.contactsAdressLineMain {
   width: 11.375rem;
-  border-bottom: 1px solid #e1d4c9;
-  transition: 1s;
-  cursor: context-menu;
+  display: flex;
+  justify-content: center;
 }
-.containerNumber {
+.contactsAdressLine {
+  width: 1rem;
+  height: 0.1rem;
+  background-color: #e1d4c9;
+  opacity: 0;
+}
+.contactsAdressMain:hover .contactsAdressLine {
+  width: 11.375rem;
+  opacity: 1;
+  transition: 1s;
+}
+.containerNumberMain {
   width: 10.938rem;
   height: 1.75rem;
+  cursor: pointer;
+}
+.containerNumber {
   gap: 0.5rem;
   display: flex;
 }
@@ -670,11 +868,21 @@ li {
   font-weight: 400;
   font-size: 1rem;
 }
-.containerNumber:hover {
+.numberLineMain {
+  width: 10.938rem;
+  height: 0.1rem;
+  display: flex;
+  justify-content: center;
+}
+.numberLine {
+  width: 1rem;
+  background-color: #e1d4c9;
+  opacity: 0;
+}
+.containerNumberMain:hover .numberLine {
   width: 11.375rem;
-  border-bottom: 1px solid #e1d4c9;
+  opacity: 1;
   transition: 1s;
-  cursor: context-menu;
 }
 .ContainerWorkedTime {
   width: 16.375rem;
@@ -694,4 +902,6 @@ li {
   font-family: Inter;
   font-weight: 400;
   font-size: 1rem;
+  cursor: context-menu;
 }
+/* Конец footer ///////////////////////////////////////////////////////////*/
