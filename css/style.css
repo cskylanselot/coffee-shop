@@ -19,14 +19,15 @@ body {
 /* Header //////////////////////////////////////////////////////////////////////////////*/
 .header {
   width: 90rem;
-  height: 45.25rem;
+  /* height: 45.25rem; */
+  height: 3.75rem;
 }
 .headerMenu {
   display: flex;
   justify-content: space-between;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
-  padding-top: 20px;
+  padding-top: 1.25rem;
 }
 .video {
 }
@@ -34,7 +35,7 @@ body {
   display: flex;
   font-size: 2rem;
   list-style-type: none;
-  gap: 4px;
+  gap: 0.25rem;
   text-align: center;
   align-self: center;
   cursor: pointer;
@@ -45,14 +46,14 @@ li {
   font-size: 1.1rem;
   font-family: Inter;
 }
-.coffe-menu {
+.coffee-menu {
   justify-content: space-between;
   width: 4.5rem;
   height: 1.75rem;
   font-size: 1rem;
   gap: 0.5rem;
 }
-.coffe-menuMain {
+.coffee-menuMain {
   justify-content: space-between;
   width: 4.5rem;
   height: 1.75rem;
@@ -60,18 +61,18 @@ li {
   gap: 0.25rem;
   display: flex;
 }
-.coffe-menuMenu {
+.coffee-menuMenu {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: Inter;
   cursor: pointer;
 }
-.coffe-menuLineMain {
+.coffee-menuLineMain {
   width: 6rem;
   display: flex;
   justify-content: center;
 }
-.coffe-menuLine {
+.coffee-menuLine {
   width: 1rem;
   height: 0.1rem;
   background-color: #403f3d;
@@ -79,13 +80,13 @@ li {
   opacity: 0;
   align-self: center;
 }
-.coffe-menu:hover .coffe-menuLine {
+.coffee-menu:hover .coffee-menuLine {
   width: 6rem;
   opacity: 1;
 }
 .fa-mug-hot {
-  margin-top: 8px;
-  margin-left: 10px;
+  margin-top: 0.5rem;
+  margin-left: 0.625rem;
 }
 .hero {
   width: 90rem;
@@ -95,6 +96,7 @@ li {
   padding-top: 1rem;
   position: relative;
   overflow: hidden;
+  display: none;
 }
 .videoMain {
   width: 100%;
@@ -566,137 +568,777 @@ li {
 
 /* Main container second //////////////////////////////////////////////////////////////////////////////*/
 .mainSecond {
-  width: 1440px;
-  height: 1328px;
-  padding: 0 40px 0 40px;
-  border: solid 1px red;
-  margin-top: 20px;
+  width: 90rem;
+  height: 83rem;
+  padding: 0 2.5rem 0 2.5rem;
+  margin-top: 1.25rem;
   /* display: none; */
 }
 .secondContainer {
-  width: 1360px;
-  height: 1328px;
-  border: solid 1px red;
+  width: 85rem;
+  height: 83rem;
 }
 .offerSecond {
-  width: 1360px;
-  height: 236px;
+  width: 85rem;
+  height: 14.75rem;
   display: grid;
   justify-content: center;
 }
 .offerSecondText {
-  width: 800px;
-  height: 150px;
+  width: 50rem;
+  height: 9.375rem;
   font-family: Inter;
-  font-size: 60px;
+  font-size: 3.75rem;
   text-align: center;
   font-weight: 600;
 }
 .offerSecondTabsContainer {
-  width: 800px;
-  height: 150px;
+  width: 50rem;
+  height: 9.375rem;
   display: flex;
   justify-content: center;
 }
 .offerSecondTabs {
-  margin-top: 40px;
-  width: 361px;
-  height: 46px;
+  margin-top: 2.5rem;
+  width: 22.563rem;
+  height: 2.875rem;
   display: flex;
   margin: 0auto;
-  gap: 16px;
+  gap: 1rem;
   justify-content: center;
 }
-.coffeTabsMain {
-  width: 115px;
-  height: 46px;
-  border-radius: 100px;
-  background-color: #665f55;
+.coffeeTabsMain {
+  width: 7.188rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
   display: flex;
   justify-content: center;
   align-items: center;
   border: solid 1px #c1b6ad;
-  gap: 16px;
+  gap: 1rem;
+  cursor: pointer;
 }
-.coffeTabsIcon {
-  width: 30px;
-  height: 30px;
+.activeTabs {
+  background-color: #665f55;
+}
+.coffeeTabsIcon {
+  width: 1.875rem;
+  height: 1.875rem;
   background-color: #c1b6ad;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.coffeTabsText {
-  width: 53px;
-  height: 24px;
+.coffeeTabsText {
+  width: 3.313rem;
+  height: 1.5rem;
   font-family: Inter;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
 }
 .teaTabsMain {
-  width: 90px;
-  height: 46px;
-  border-radius: 100px;
+  width: 5.625rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
   border: solid 1px #c1b6ad;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
+  cursor: pointer;
 }
 .teaTabsIcon {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background-color: #c1b6ad;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .teaTabsText {
-  width: 28px;
-  height: 24px;
-  font-size: 16px;
+  width: 1.75rem;
+  height: 1.5rem;
+  font-size: 1rem;
   font-family: Inter;
   font-weight: 600;
 }
 .dessertTabsMain {
-  width: 124px;
-  height: 46px;
-  border-radius: 100px;
+  width: 7.75rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
   border: solid 1px #c1b6ad;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
+  cursor: pointer;
 }
 .dessertTabsIcon {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   background-color: #c1b6ad;
-  border-radius: 100px;
+  border-radius: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .dessertTabsText {
-  width: 62px;
-  height: 24px;
-  font-size: 16px;
+  width: 3.875rem;
+  height: 1.5rem;
+  font-size: 1rem;
   font-family: Inter;
   font-weight: 600;
 }
-.grid {
-  width: 1360px;
-  height: 1052px;
-  gap: 40px;
+
+/* Вкладка коффе //////////////////////////////////////////////////////////////////////////////*/
+
+.gridCoffeeMain {
+  margin-top: 2.5rem;
+  width: 85rem;
+  height: 65.75rem;
+  gap: 2.5rem;
   display: flex;
+  flex-wrap: wrap;
 }
-.coffeGrid {
-  width: 310px;
-  height: 506px;
+.coffeeGrid1 {
+  width: 19.375rem;
+  height: 31.625rem;
   border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
 }
+.coffeeGrid2 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.coffeeGrid3 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.coffeeGrid4 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.coffeeGrid5 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.coffeeGrid6 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.coffeeGrid7 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.coffeeGrid8 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.IrishCoffeeImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-1.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.IrishCoffeeImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.IrishCoffeeH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.IrishCoffeeText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.IrishCoffeePrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.KahluaCoffeeImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-2.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.KahluaCoffeeImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.KahluaCoffeeH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.KahluaCoffeeText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.KahluaCoffeePrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.HoneyRafImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-3.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.HoneyRafImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.HoneyRafH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.HoneyRafText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.HoneyRafPrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.IceCappuccinoImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-4.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.IceCappuccinoImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.IceCappuccinoH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.IceCappuccinoText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.IceCappuccinoPrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.EspressoImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-5.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.EspressoImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.EspressoH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.EspressoText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.EspressoPrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.LatteImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-6.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.LatteImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.LatteH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.LatteText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.LattePrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.LatteMacchiatoImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-7.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.LatteMacchiatoImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.LatteMacchiatoH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.LatteMacchiatoText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.LatteMacchiatoPrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.CoffeeWithCognacImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/coffee-8.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.CoffeeWithCognacImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.CoffeeWithCognacH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.CoffeeWithCognacText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.CoffeeWithCognacPrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+/* Конец вкладка коффе////////////////////////////////////////////////////////////////////////////// */
+
+/* Вкладка чай //////////////////////////////////////////////////////////////////////////////*/
+
+.gridTeaMain {
+  width: 85rem;
+  height: 31.625rem;
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+  display: none;
+}
+.teaGrid {
+  width: 19.375rem;
+  height: 31.625rem;
+  border-radius: 2.5rem;
+  border: 1px solid #c1b6ad;
+  cursor: pointer;
+}
+.MoroccanImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/tea-1.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.MoroccanImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.GingerImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/tea-2.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.GingerImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.CranberryImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/tea-3.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.CranberryImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.SeaBuckthornImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/tea-4.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.SeaBuckthornImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.teaH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.teaText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.teaPrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Конец вкладка чай //////////////////////////////////////////////////////////////////////////////*/
+
+/* Вкладка десерт //////////////////////////////////////////////////////////////////////////////*/
+
+.gridDessertMain {
+  margin-top: 2.5rem;
+  width: 85rem;
+  height: 65.75rem;
+  gap: 2.5rem;
+  display: none;
+  flex-wrap: wrap;
+}
+.dessertGrid {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertH1 {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.dessertText {
+  width: 16.875rem;
+  height: 4.5rem;
+  margin-left: 1.25rem;
+  margin-top: 1.25rem;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.dessertPrise {
+  width: 16.875rem;
+  height: 1.875rem;
+  margin-left: 1.25rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.MarbleCheesecakeImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-1.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.MarbleCheesecakeImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.RedVelvetImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-2.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.RedVelvetImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.CheesecakesImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-3.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.CheesecakesImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.CremeBruleeImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-4.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.CremeBruleeImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.PancakesImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-5.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.PancakesImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.HoneyCakeImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-6.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.HoneyCakeImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.ChocolateCakeImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-7.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.ChocolateCakeImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+.BlackForestImg {
+  width: 19.375rem;
+  height: 19.375rem;
+  background-image: url("/img/dessert-8.jpg");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-size 1s ease;
+  border-radius: 1.5rem;
+}
+.BlackForestImg:hover {
+  background-size: 100%;
+  transition: background-size 1s ease;
+}
+
+/* Конец вкладки десерт //////////////////////////////////////////////////////////////////////////////*/
 
 /* Main container second END //////////////////////////////////////////////////////////////////////////////*/
 
@@ -751,6 +1393,7 @@ li {
 .fa-twitter:hover {
   background-color: #e1d4c9;
   transition: 1s;
+  cursor: pointer;
 }
 .fa-instagram {
   width: 3.75rem;
@@ -766,6 +1409,7 @@ li {
 .fa-instagram:hover {
   background-color: #e1d4c9;
   transition: 1s;
+  cursor: pointer;
 }
 .fa-facebook-f {
   width: 3.75rem;
@@ -781,6 +1425,7 @@ li {
 .fa-facebook-f:hover {
   background-color: #e1d4c9;
   transition: 1s;
+  cursor: pointer;
 }
 .contactsInfo {
   width: 33.125rem;

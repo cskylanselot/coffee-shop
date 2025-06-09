@@ -1,4 +1,5 @@
 // Slider
+
 const sliderMain = document.querySelector(".sliderMain");
 const arrowLeft = document.querySelector(".arrowLeft");
 const arrowRight = document.querySelector(".arrowRight");
@@ -17,4 +18,42 @@ arrowLeft.addEventListener("click", function () {
   }
   sliderMain.style.left = -offset + "rem";
 });
-//
+
+//Конец Slider
+
+// Coffee Tea Dessert menu
+const mainSecond = document.querySelector(".mainSecond");
+const coffeeTabsMain = document.querySelector(".coffeeTabsMain");
+const teaTabsMain = document.querySelector(".teaTabsMain");
+const dessertTabsMain = document.querySelector(".dessertTabsMain");
+const gridCoffeeMain = document.querySelector(".gridCoffeeMain");
+const gridTeaMain = document.querySelector(".gridTeaMain");
+const gridDessertMain = document.querySelector(".gridDessertMain");
+coffeeTabsMain.addEventListener("click", function () {
+  gridTeaMain.style.display = "none";
+  gridDessertMain.style.display = "none";
+  gridCoffeeMain.style.display = "flex";
+  coffeeTabsMain.classList.add("activeTabs");
+  teaTabsMain.classList.remove("activeTabs");
+  dessertTabsMain.classList.remove("activeTabs");
+  mainSecond.style.height = 83 + "rem";
+});
+teaTabsMain.addEventListener("click", function () {
+  gridCoffeeMain.style.display = "none";
+  gridDessertMain.style.display = "none";
+  gridTeaMain.style.display = "flex";
+  teaTabsMain.classList.add("activeTabs");
+  coffeeTabsMain.classList.remove("activeTabs");
+  dessertTabsMain.classList.remove("activeTabs");
+  mainSecond.style.height = 48.875 + "rem";
+});
+dessertTabsMain.addEventListener("click", function () {
+  gridCoffeeMain.style.display = "none";
+  gridTeaMain.style.display = "none";
+  gridDessertMain.style.display = "flex";
+  dessertTabsMain.classList.add("activeTabs");
+  coffeeTabsMain.classList.remove("activeTabs");
+  teaTabsMain.classList.remove("activeTabs");
+  mainSecond.style.height = 83 + "rem";
+});
+// End Coffee Tea Dessert menu
