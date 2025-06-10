@@ -19,8 +19,8 @@ body {
 /* Header //////////////////////////////////////////////////////////////////////////////*/
 .header {
   width: 90rem;
-  /* height: 45.25rem; */
-  height: 3.75rem;
+  height: 45.25rem;
+  /* height: 3.75rem; */
 }
 .headerMenu {
   display: flex;
@@ -43,7 +43,7 @@ body {
 li {
   width: 7.313rem;
   height: 1.75rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family: Inter;
 }
 .coffee-menu {
@@ -96,7 +96,7 @@ li {
   padding-top: 1rem;
   position: relative;
   overflow: hidden;
-  display: none;
+  /* display: none; */
 }
 .videoMain {
   width: 100%;
@@ -181,7 +181,7 @@ li {
 
 /* Первый  main container first //////////////////////////////////////////////////////////////////////////////*/
 .mainFirst {
-  display: none;
+  /* display: none; */
 }
 .slider {
   width: 90rem;
@@ -313,11 +313,26 @@ li {
   display: flex;
   justify-content: space-between;
 }
-.control {
+.control1 {
   width: 2.5rem;
   height: 0.5rem;
-  background-color: #665f55;
+  background-color: #c1b6ad;
   border-radius: 0.5rem;
+}
+.control2 {
+  width: 2.5rem;
+  height: 0.5rem;
+  background-color: #c1b6ad;
+  border-radius: 0.5rem;
+}
+.control3 {
+  width: 2.5rem;
+  height: 0.5rem;
+  background-color: #c1b6ad;
+  border-radius: 0.5rem;
+}
+.controlActive {
+  background-color: #665f55;
 }
 .about {
   width: 90rem;
@@ -359,6 +374,7 @@ li {
   background-size: 110%;
   background-position: center;
   transition: background-size 1s ease;
+  cursor: pointer;
 }
 .aboutImg1:hover {
   background-size: 100%;
@@ -372,6 +388,7 @@ li {
   background-size: 110%;
   background-position: center;
   transition: background-size 1s ease;
+  cursor: pointer;
 }
 .aboutImg2:hover {
   background-size: 100%;
@@ -384,6 +401,7 @@ li {
   background-size: 110%;
   background-position: center;
   transition: background-size 1s ease;
+  cursor: pointer;
 }
 .aboutImg3:hover {
   background-size: 100%;
@@ -397,6 +415,7 @@ li {
   background-size: 110%;
   background-position: center;
   transition: background-size 1s ease;
+  cursor: pointer;
 }
 .aboutImg4:hover {
   background-size: 100%;
@@ -572,7 +591,7 @@ li {
   height: 83rem;
   padding: 0 2.5rem 0 2.5rem;
   margin-top: 1.25rem;
-  /* display: none; */
+  display: none;
 }
 .secondContainer {
   width: 85rem;
@@ -1078,6 +1097,209 @@ li {
   font-size: 1.5rem;
   font-weight: 600;
 }
+
+/* Вкладка покупки коффе //////////////////////////////////////////////////////////////////////////////*/
+.coffeeBuyMenu {
+  width: 48rem;
+  height: 29.5rem;
+  display: none;
+}
+.IrishCoffeeImg {
+}
+.coffeeBuyMenuMain {
+  width: 28.625rem;
+  height: 29.5rem;
+  padding-left: 1.25rem;
+  gap: 1.25rem;
+  display: grid;
+}
+.coffeeBuyMenuTitle {
+  width: 27.375rem;
+  height: 5.625rem;
+  display: grid;
+  gap: 0.75rem;
+}
+.coffeeBuyMenuTitleH1 {
+  width: 27.375rem;
+  height: 1.875rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #403f3d;
+}
+.coffeeBuyMenuTitleText {
+  width: 27.375rem;
+  height: 3rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #403f3d;
+}
+.coffeeBuyMenuSize {
+  width: 27.375rem;
+  height: 4.875rem;
+  display: grid;
+  gap: 0.5rem;
+}
+.coffeeBuyMenuSizeText {
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #403f3d;
+}
+.SizeTabs {
+  width: 27.375rem;
+  height: 2.875rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.SizeActive {
+  background-color: #403f3d;
+}
+.SizeS {
+  width: 7.25rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.SizeSIcon {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  background-color: #e1d4c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeSIconText {
+  width: 0.688rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.SizeSText {
+  width: 3.375rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e1d4c9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeM {
+  width: 7.25rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c1b6ad;
+}
+.SizeMIcon {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  background-color: #c1b6ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeMIconText {
+  width: 0.938rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.SizeMText {
+  width: 3.375rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #403f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeL {
+  width: 7.25rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c1b6ad;
+}
+.SizeLIcon {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  background-color: #c1b6ad;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeLIconText {
+  width: 0.938rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.SizeLText {
+  width: 3.375rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #403f3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.coffeeBuyMenuAdditives {
+}
+.Additives1 {
+}
+.AdditivesIcon {
+}
+.AdditivesText {
+}
+.Additives2 {
+}
+.Additives3 {
+}
+.coffeeBuyMenuTotal {
+}
+.coffeeBuyMenuTotalText {
+}
+.coffeeBuyMenuAlert {
+}
+.coffeeBuyMenuAlertIcon {
+}
+.coffeeBuyMenuAlertText {
+}
+.coffeeBuyMenuClose {
+}
+.coffeeBuyMenuCloseText {
+}
+/* Конец вкладки покупки коффе //////////////////////////////////////////////////////////////////////////////*/
+
 /* Конец вкладка коффе////////////////////////////////////////////////////////////////////////////// */
 
 /* Вкладка чай //////////////////////////////////////////////////////////////////////////////*/
