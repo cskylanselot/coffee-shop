@@ -60,7 +60,7 @@ function prevSlide() {
 let avtoSlider;
 
 function startSlider() {
-  avtoSlider = setInterval(nextSlide, 10000);
+  avtoSlider = setInterval(nextSlide, 5000);
 }
 
 function stopSlider() {
@@ -137,3 +137,20 @@ dessertTabsMain.addEventListener("click", function () {
   mainSecond.style.height = 83 + "rem";
 });
 // End Coffee Tea Dessert menu
+
+// Coffee Buy Menu click
+const coffeeGrid1 = document.querySelector(".coffeeGrid1");
+const backDrop = document.querySelector(".backDrop");
+const coffeeBuyMenuClose = document.querySelector(".coffeeBuyMenuClose");
+const IrishID = document.getElementById("IrishID");
+
+coffeeBuyMenuClose.addEventListener("click", function () {
+  backDrop.style.display = "none";
+  IrishID.style.display = "none";
+});
+coffeeGrid1.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  IrishID.style.display = "flex";
+});
+
+// Coffee Buy Menu click End
