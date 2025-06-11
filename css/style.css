@@ -799,7 +799,7 @@ li {
 .IrishCoffeeImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-1.jpg");
+  background-image: url("../img/coffee-1.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -839,7 +839,7 @@ li {
 .KahluaCoffeeImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-2.jpg");
+  background-image: url("../img/coffee-2.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -879,7 +879,7 @@ li {
 .HoneyRafImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-3.jpg");
+  background-image: url("../img/coffee-3.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -919,7 +919,7 @@ li {
 .IceCappuccinoImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-4.jpg");
+  background-image: url("../img/coffee-4.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -959,7 +959,7 @@ li {
 .EspressoImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-5.jpg");
+  background-image: url("../img/coffee-5.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -999,7 +999,7 @@ li {
 .LatteImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-6.jpg");
+  background-image: url("../img/coffee-6.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1039,7 +1039,7 @@ li {
 .LatteMacchiatoImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-7.jpg");
+  background-image: url("../img/coffee-7.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1079,7 +1079,7 @@ li {
 .CoffeeWithCognacImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/coffee-8.jpg");
+  background-image: url("../img/coffee-8.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1526,7 +1526,7 @@ li {
 .MoroccanImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/tea-1.jpg");
+  background-image: url("../img/tea-1.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1540,7 +1540,7 @@ li {
 .GingerImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/tea-2.jpg");
+  background-image: url("../img/tea-2.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1554,7 +1554,7 @@ li {
 .CranberryImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/tea-3.jpg");
+  background-image: url("../img/tea-3.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1568,7 +1568,7 @@ li {
 .SeaBuckthornImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/tea-4.jpg");
+  background-image: url("../img/tea-4.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1654,7 +1654,7 @@ li {
 .MarbleCheesecakeImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-1.jpg");
+  background-image: url("../img/dessert-1.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1668,7 +1668,7 @@ li {
 .RedVelvetImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-2.jpg");
+  background-image: url("../img/dessert-2.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1682,7 +1682,7 @@ li {
 .CheesecakesImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-3.jpg");
+  background-image: url("../img/dessert-3.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1696,7 +1696,7 @@ li {
 .CremeBruleeImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-4.jpg");
+  background-image: url("../img/dessert-4.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1710,7 +1710,7 @@ li {
 .PancakesImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-5.jpg");
+  background-image: url("../img/dessert-5.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1724,7 +1724,7 @@ li {
 .HoneyCakeImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-6.jpg");
+  background-image: url("../img/dessert-6.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1738,7 +1738,7 @@ li {
 .ChocolateCakeImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-7.jpg");
+  background-image: url("../img/dessert-7.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
@@ -1752,7 +1752,7 @@ li {
 .BlackForestImg {
   width: 19.375rem;
   height: 19.375rem;
-  background-image: url("/img/dessert-8.jpg");
+  background-image: url("../img/dessert-8.jpg");
   background-size: 110%;
   background-repeat: no-repeat;
   background-position: center;
