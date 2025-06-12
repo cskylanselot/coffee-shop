@@ -42,6 +42,9 @@ body {
   padding-right: 2.5rem;
   padding-top: 1.25rem;
 }
+.StartMenuBack {
+  cursor: pointer;
+}
 .video {
 }
 .nav {
@@ -1189,6 +1192,15 @@ li {
 .SizeActive {
   background-color: #403f3d;
 }
+.SizeActive1 {
+  color: #e1d4c9;
+}
+.SizeActive2 {
+  background-color: #e1d4c9;
+}
+.SizeActive3 {
+  background-color: #c1b6ad;
+}
 .SizeS {
   width: 7.25rem;
   height: 2.875rem;
@@ -1197,12 +1209,13 @@ li {
   gap: 0.5rem;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  border: 1px solid #c1b6ad;
 }
 .SizeSIcon {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 6.25rem;
-  background-color: #e1d4c9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1222,7 +1235,6 @@ li {
   font-family: Inter;
   font-size: 1rem;
   font-weight: 600;
-  color: #e1d4c9;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1236,12 +1248,12 @@ li {
   justify-content: center;
   align-items: center;
   border: 1px solid #c1b6ad;
+  cursor: pointer;
 }
 .SizeMIcon {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 6.25rem;
-  background-color: #c1b6ad;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1261,7 +1273,6 @@ li {
   font-family: Inter;
   font-size: 1rem;
   font-weight: 600;
-  color: #403f3d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1275,18 +1286,18 @@ li {
   justify-content: center;
   align-items: center;
   border: 1px solid #c1b6ad;
+  cursor: pointer;
 }
 .SizeLIcon {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 6.25rem;
-  background-color: #c1b6ad;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .SizeLIconText {
-  width: 0.938rem;
+  width: 0.625rem;
   height: 1.5rem;
   font-family: Inter;
   font-size: 1rem;
@@ -1300,7 +1311,6 @@ li {
   font-family: Inter;
   font-size: 1rem;
   font-weight: 600;
-  color: #403f3d;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1339,12 +1349,28 @@ li {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
-.AdditivesIcon {
+.AdditivesIcon1 {
   width: 1.875rem;
   height: 1.875rem;
   border-radius: 6.25rem;
-  background-color: #c1b6ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AdditivesIcon2 {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AdditivesIcon3 {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1376,13 +1402,12 @@ li {
   display: flex;
   align-items: center;
 }
-.AdditivesText {
+.AdditivesText1 {
   width: 2.875rem;
   height: 1.5rem;
   font-family: Inter;
   font-size: 1rem;
   font-weight: 600;
-  color: #403f3d;
   display: flex;
   align-items: center;
 }
@@ -1392,7 +1417,15 @@ li {
   font-family: Inter;
   font-size: 1rem;
   font-weight: 600;
-  color: #403f3d;
+  display: flex;
+  align-items: center;
+}
+.AdditivesText3 {
+  width: 2.875rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
   display: flex;
   align-items: center;
 }
@@ -1405,6 +1438,7 @@ li {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .Additives3 {
   width: 6.75rem;
@@ -1415,6 +1449,7 @@ li {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  cursor: pointer;
 }
 .coffeeBuyMenuTotal {
   width: 27.375rem;
@@ -1494,6 +1529,12 @@ li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: 1s;
+}
+.coffeeBuyMenuClose:hover {
+  background-color: #665f55;
+  color: #e1d4c9;
+  transition: 1s;
 }
 .coffeeBuyMenuCloseText {
   width: 2.813rem;
