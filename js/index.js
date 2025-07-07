@@ -285,29 +285,51 @@ SizeL.forEach((sizeL, index) => {
 
 Additives1.forEach((additives1, index) => {
   additives1.addEventListener("click", () => {
-    AdditivesIcon1[index].classList.remove("SizeActive2");
-    AdditivesIcon1[index].classList.remove("SizeActive3");
-    additives1.classList.add("SizeActive");
-    AdditivesText1[index].classList.add("SizeActive1");
-    AdditivesIcon1[index].classList.add("SizeActive2");
+    const isActive = additives1.classList.contains("SizeActive");
+    if (isActive) {
+      additives1.classList.remove("SizeActive");
+      AdditivesText1[index].classList.remove("SizeActive1");
+      AdditivesIcon1[index].classList.remove("SizeActive2");
+      AdditivesIcon1[index].classList.add("SizeActive3");
+    } else {
+      AdditivesIcon1[index].classList.remove("SizeActive3");
+      additives1.classList.add("SizeActive");
+      AdditivesText1[index].classList.add("SizeActive1");
+      AdditivesIcon1[index].classList.add("SizeActive2");
+    }
   });
 });
 Additives2.forEach((additives2, index) => {
   additives2.addEventListener("click", () => {
-    AdditivesIcon2[index].classList.remove("SizeActive3");
-    additives2.classList.add("SizeActive");
-    AdditivesText2[index].classList.add("SizeActive1");
-    AdditivesIcon2[index].classList.add("SizeActive2");
+    const isActive = additives2.classList.contains("SizeActive");
+    if (isActive) {
+      additives2.classList.remove("SizeActive");
+      AdditivesText2[index].classList.remove("SizeActive1");
+      AdditivesIcon2[index].classList.remove("SizeActive2");
+      AdditivesIcon2[index].classList.add("SizeActive3");
+    } else {
+      AdditivesIcon2[index].classList.remove("SizeActive3");
+      additives2.classList.add("SizeActive");
+      AdditivesText2[index].classList.add("SizeActive1");
+      AdditivesIcon2[index].classList.add("SizeActive2");
+    }
   });
 });
 
 Additives3.forEach((additives3, index) => {
   additives3.addEventListener("click", () => {
-    AdditivesIcon3[index].classList.remove("SizeActive2");
-    AdditivesIcon3[index].classList.remove("SizeActive3");
-    additives3.classList.add("SizeActive");
-    AdditivesText3[index].classList.add("SizeActive1");
-    AdditivesIcon3[index].classList.add("SizeActive2");
+    const isActive = additives3.classList.contains("SizeActive");
+    if (isActive) {
+      additives3.classList.remove("SizeActive");
+      AdditivesText3[index].classList.remove("SizeActive1");
+      AdditivesIcon3[index].classList.remove("SizeActive2");
+      AdditivesIcon3[index].classList.add("SizeActive3");
+    } else {
+      AdditivesIcon3[index].classList.remove("SizeActive3");
+      additives3.classList.add("SizeActive");
+      AdditivesText3[index].classList.add("SizeActive1");
+      AdditivesIcon3[index].classList.add("SizeActive2");
+    }
   });
 });
 
