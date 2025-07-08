@@ -350,3 +350,78 @@ coffeeBuyMenuClose.forEach(function (close) {
 // Coffee Buy Menu Button click end
 
 // Coffee Buy Menu click End
+
+const CofeeBuyMenu = document.querySelectorAll(".coffeeBuyMenu");
+CofeeBuyMenu.forEach(function (CoffeeBlock) {
+  const priseCoffe = CoffeeBlock.querySelector(".coffeeBuyMenuTotalText2");
+  const sizeM = CoffeeBlock.querySelector(".SizeM");
+  const sizeL = CoffeeBlock.querySelector(".SizeL");
+  const sizeS = CoffeeBlock.querySelector(".SizeS");
+  const Sugar = CoffeeBlock.querySelector(".Additives1");
+  const Cinnamon = CoffeeBlock.querySelector(".Additives2");
+  const Syrup = CoffeeBlock.querySelector(".Additives3");
+
+  const basePrice = parseFloat(priseCoffe.textContent.replace("$", "")); // достаём число из строки и сохраняем базовую цену
+
+  let currentPrice = basePrice; //переменная для хранения текущей суммы
+
+  sizeS.addEventListener("click", function () {
+    priseCoffe.textContent = `$${basePrice.toFixed(2)}`;
+  });
+  sizeM.addEventListener("click", function () {
+    const newPrice = (basePrice + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+    priseCoffe.textContent = `$${newPrice}`;
+  });
+  sizeL.addEventListener("click", function () {
+    const newPrice = (basePrice + 1).toFixed(2); //округляем до 2 знаков после запятой
+    priseCoffe.textContent = `$${newPrice}`;
+  });
+  sizeM.addEventListener("click", function () {
+    const newPrice = (basePrice + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+    priseCoffe.textContent = `$${newPrice}`;
+  });
+
+  Sugar.addEventListener("click", function () {
+    if (Sugar.classList.contains("SizeActive")) {
+      const newPrice = (currentPrice + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffe.textContent = `$${newPrice}`;
+    } else {
+      const newPrice = currentPrice.toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffe.textContent = `$${newPrice}`;
+    }
+    updatePrice();
+  });
+  Cinnamon.addEventListener("click", function () {
+    if (Cinnamon.classList.contains("SizeActive")) {
+      const newPrice = (currentPrice + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffe.textContent = `$${newPrice}`;
+    } else {
+      const newPrice = currentPrice.toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffe.textContent = `$${newPrice}`;
+    }
+    updatePrice();
+  });
+  Syrup.addEventListener("click", function () {
+    if (Syrup.classList.contains("SizeActive")) {
+      const newPrice = (currentPrice + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffe.textContent = `$${newPrice}`;
+    } else {
+      const newPrice = currentPrice.toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffe.textContent = `$${newPrice}`;
+    }
+    updatePrice();
+  });
+  function updatePrice() {
+    let currentPrice = basePrice;
+    if (sizeM.classList.contains("SizeActive")) currentPrice += 0.5;
+    if (sizeL.classList.contains("SizeActive")) currentPrice += 1;
+
+    if (Sugar.classList.contains("SizeActive")) currentPrice += 0.5;
+    if (Cinnamon.classList.contains("SizeActive")) currentPrice += 0.5;
+    if (Syrup.classList.contains("SizeActive")) currentPrice += 0.5;
+
+    priseCoffe.textContent = `$${currentPrice.toFixed(2)}`;
+  }
+});
+
+// coffee prise end
