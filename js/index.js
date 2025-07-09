@@ -8,6 +8,32 @@ const control2 = document.querySelector(".control2");
 const control3 = document.querySelector(".control3");
 let offset = 0;
 
+let progress = 0; //переменная для постепенного заполнения бара
+
+let intervalID;
+
+const progressBar = document.querySelectorAll(".progressBar"); // полоска заполнения бара
+
+function startProgressBar() {
+  clearInterval(intervalID);
+  progress = 0;
+  progressBar.forEach((bar) => {
+    bar.style.width = "0%";
+  });
+  const controlActive = document.querySelector(".controlActive");
+  const bar = controlActive.querySelector(".progressBar");
+  bar.style.width = "0%"; //обнуляем ширину бара
+  intervalID = setInterval(() => {
+    //увеличение прогресса каждые 50 мс
+    progress++;
+    bar.style.width = progress + "%";
+    if (progress >= 100) {
+      clearInterval(intervalID);
+      bar.style.width = "0%"; //обнуляем ширину бара
+    }
+  }, 50);
+}
+
 arrowRight.addEventListener("click", nextSlide);
 
 function nextSlide() {
@@ -31,6 +57,7 @@ function nextSlide() {
     control2.classList.remove("controlActive");
     control1.classList.remove("controlActive");
   }
+  startProgressBar();
 }
 
 arrowLeft.addEventListener("click", prevSlide);
@@ -60,6 +87,7 @@ function prevSlide() {
 let avtoSlider;
 
 function startSlider() {
+  startProgressBar();
   avtoSlider = setInterval(nextSlide, 5000);
 }
 

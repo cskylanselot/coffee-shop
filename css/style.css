@@ -381,6 +381,13 @@ li {
   display: flex;
   justify-content: space-between;
 }
+.progressBar {
+  height: 0.5rem;
+  width: 0%;
+  transition: width 0.05s linear;
+  background-color: black;
+  border-radius: 0.5rem;
+}
 .control1 {
   width: 2.5rem;
   height: 0.5rem;
