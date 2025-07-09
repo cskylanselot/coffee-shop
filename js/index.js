@@ -6,100 +6,113 @@ const arrowRight = document.querySelector(".arrowRight");
 const control1 = document.querySelector(".control1");
 const control2 = document.querySelector(".control2");
 const control3 = document.querySelector(".control3");
+
+const progressBars = document.querySelectorAll(".progressBar");
+
 let offset = 0;
+let progress = 0;
+let intervalID = null;
+let avtoSlider = null;
+let bar = null;
 
-let progress = 0; //переменная для постепенного заполнения бара
-
-let intervalID;
-
-const progressBar = document.querySelectorAll(".progressBar"); // полоска заполнения бара
-
+// Запуск прогресс-бара
 function startProgressBar() {
   clearInterval(intervalID);
   progress = 0;
-  progressBar.forEach((bar) => {
-    bar.style.width = "0%";
-  });
+
+  // Сброс всех полосок
+  progressBars.forEach((b) => (b.style.width = "0%"));
+
   const controlActive = document.querySelector(".controlActive");
-  const bar = controlActive.querySelector(".progressBar");
-  bar.style.width = "0%"; //обнуляем ширину бара
+  bar = controlActive.querySelector(".progressBar");
+
   intervalID = setInterval(() => {
-    //увеличение прогресса каждые 50 мс
     progress++;
     bar.style.width = progress + "%";
     if (progress >= 100) {
       clearInterval(intervalID);
-      bar.style.width = "0%"; //обнуляем ширину бара
+      bar.style.width = "0%";
     }
   }, 50);
 }
 
-arrowRight.addEventListener("click", nextSlide);
+// Приостановка и возобновление
+function pauseProgressBar() {
+  clearInterval(intervalID);
+  clearInterval(avtoSlider);
+  avtoSlider = null;
+}
 
-function nextSlide() {
-  offset = offset + 50;
-  if (offset > 100) {
-    offset = 0;
+function resumeProgressBar() {
+  // Продолжение бара, если он не закончен
+  if (progress < 100 && bar) {
+    clearInterval(intervalID); // защита от двойного запуска
+    intervalID = setInterval(() => {
+      progress++;
+      bar.style.width = progress + "%";
+      if (progress >= 100) {
+        clearInterval(intervalID);
+        bar.style.width = "0%";
+      }
+    }, 50);
   }
-  sliderMain.style.left = -offset + "rem";
-  if (offset == 0) {
-    control1.classList.add("controlActive");
-    control2.classList.remove("controlActive");
-    control3.classList.remove("controlActive");
+
+  // Продолжение автослайдера
+  if (!avtoSlider) {
+    avtoSlider = setInterval(nextSlide, 5000);
   }
-  if (offset == 50) {
-    control2.classList.add("controlActive");
-    control1.classList.remove("controlActive");
-    control3.classList.remove("controlActive");
-  }
-  if (offset == 100) {
-    control3.classList.add("controlActive");
-    control2.classList.remove("controlActive");
-    control1.classList.remove("controlActive");
-  }
+}
+
+// Сброс и перезапуск слайдера и бара
+function resetSlider() {
+  clearInterval(avtoSlider);
+  clearInterval(intervalID);
+  avtoSlider = setInterval(nextSlide, 5000);
   startProgressBar();
 }
 
-arrowLeft.addEventListener("click", prevSlide);
-function prevSlide() {
-  offset = offset - 50;
-  if (offset < 0) {
-    offset = 100;
-  }
-  sliderMain.style.left = -offset + "rem";
-  if (offset == 0) {
-    control1.classList.add("controlActive");
-    control2.classList.remove("controlActive");
-    control3.classList.remove("controlActive");
-  }
-  if (offset == 50) {
-    control2.classList.add("controlActive");
-    control1.classList.remove("controlActive");
-    control3.classList.remove("controlActive");
-  }
-  if (offset == 100) {
-    control3.classList.add("controlActive");
-    control2.classList.remove("controlActive");
-    control1.classList.remove("controlActive");
-  }
+// Переключение слайдов
+function nextSlide() {
+  offset += 50;
+  if (offset > 100) offset = 0;
+  updateSlider();
 }
 
-let avtoSlider;
+function prevSlide() {
+  offset -= 50;
+  if (offset < 0) offset = 100;
+  updateSlider();
+}
 
+// Обновление позиции и активного индикатора
+function updateSlider() {
+  sliderMain.style.left = -offset + "rem";
+
+  control1.classList.toggle("controlActive", offset === 0);
+  control2.classList.toggle("controlActive", offset === 50);
+  control3.classList.toggle("controlActive", offset === 100);
+
+  resetSlider(); // сбросим всё и начнём с начала
+}
+
+// Слушатели
+arrowRight.addEventListener("click", nextSlide);
+arrowLeft.addEventListener("click", prevSlide);
+
+sliderMain.addEventListener("mouseover", pauseProgressBar);
+sliderMain.addEventListener("mouseout", resumeProgressBar);
+arrowRight.addEventListener("mouseover", pauseProgressBar);
+arrowRight.addEventListener("mouseout", resumeProgressBar);
+arrowLeft.addEventListener("mouseover", pauseProgressBar);
+arrowLeft.addEventListener("mouseout", resumeProgressBar);
+
+// Старт
 function startSlider() {
   startProgressBar();
   avtoSlider = setInterval(nextSlide, 5000);
 }
 
-function stopSlider() {
-  clearInterval(avtoSlider);
-}
-
 startSlider();
-
-sliderMain.addEventListener("mouseover", stopSlider);
-sliderMain.addEventListener("mouseout", startSlider);
-
 //Конец Slider
 
 // menu click
