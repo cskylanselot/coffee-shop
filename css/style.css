@@ -718,6 +718,7 @@ li {
 .coffeeTabsIcon {
   width: 1.875rem;
   height: 1.875rem;
+  padding-bottom: 0.1rem;
   background-color: #c1b6ad;
   border-radius: 6.25rem;
   display: flex;
@@ -776,6 +777,7 @@ li {
 .dessertTabsIcon {
   width: 1.875rem;
   height: 1.875rem;
+  padding-bottom: 0.2rem;
   background-color: #c1b6ad;
   border-radius: 6.25rem;
   display: flex;
@@ -1199,8 +1201,6 @@ li {
   display: flex;
   border-radius: 2.25rem;
 }
-.IrishCoffeeImg {
-}
 .coffeeBuyMenuMain {
   width: 28.625rem;
   height: 29.5rem;
@@ -1616,7 +1616,28 @@ li {
   margin-top: 2.5rem;
   display: none;
 }
-.teaGrid {
+.teaGrid1 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border-radius: 2.5rem;
+  border: 1px solid #c1b6ad;
+  cursor: pointer;
+}
+.teaGrid2 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border-radius: 2.5rem;
+  border: 1px solid #c1b6ad;
+  cursor: pointer;
+}
+.teaGrid3 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border-radius: 2.5rem;
+  border: 1px solid #c1b6ad;
+  cursor: pointer;
+}
+.teaGrid4 {
   width: 19.375rem;
   height: 31.625rem;
   border-radius: 2.5rem;
@@ -1637,7 +1658,7 @@ li {
   background-size: 100%;
   transition: background-size 1s ease;
 }
-.GingerImg {
+.GingeImg {
   width: 19.375rem;
   height: 19.375rem;
   background-image: url("../img/tea-2.jpg");
@@ -1647,7 +1668,7 @@ li {
   transition: background-size 1s ease;
   border-radius: 1.5rem;
 }
-.GingerImg:hover {
+.GingeImg:hover {
   background-size: 100%;
   transition: background-size 1s ease;
 }
@@ -1708,8 +1729,44 @@ li {
 
 /* Конец вкладка чай //////////////////////////////////////////////////////////////////////////////*/
 
+/* Вкладка покупки чая //////////////////////////////////////////////////////////////////////////////*/
+
+.TeaBuyMenuContainer {
+  width: 50rem;
+  height: 31.5rem;
+  border-radius: 2.25rem;
+  padding: 1rem;
+  background-color: #e1d4c9;
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.TeaBuyMenuClose {
+  width: 27.375rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+  border: 1px solid #665f55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+
+/* Конец вкладки покупки чая  //////////////////////////////////////////////////////////////////////////////*/
+
 /* Вкладка десерт //////////////////////////////////////////////////////////////////////////////*/
 
+.coffeeBuyMenuDessert {
+  width: 48rem;
+  height: 29.5rem;
+  display: flex;
+  border-radius: 2.25rem;
+}
 .gridDessertMain {
   margin-top: 2.5rem;
   width: 85rem;
@@ -1718,7 +1775,56 @@ li {
   display: none;
   flex-wrap: wrap;
 }
-.dessertGrid {
+.dessertGrid1 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertGrid2 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertGrid3 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertGrid4 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertGrid5 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertGrid6 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertGrid7 {
+  width: 19.375rem;
+  height: 31.625rem;
+  border: 1px solid #c1b6ad;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+.dessertGrid8 {
   width: 19.375rem;
   height: 31.625rem;
   border: 1px solid #c1b6ad;
@@ -1865,6 +1971,236 @@ li {
 }
 
 /* Конец вкладки десерт //////////////////////////////////////////////////////////////////////////////*/
+
+/* Вкладка покупки десерта //////////////////////////////////////////////////////////////////////////////*/
+
+.DessertBuyMenuContainer {
+  width: 50rem;
+  height: 31.5rem;
+  border-radius: 2.25rem;
+  padding: 1rem;
+  background-color: #e1d4c9;
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.DessertBuyMenuClose {
+  width: 27.375rem;
+  height: 2.75rem;
+  border-radius: 6.25rem;
+  border: 1px solid #665f55;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.SizeSDessert {
+  width: 6.063rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #c1b6ad;
+}
+.SizeSIconDessert {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeSTextDessert {
+  width: 2.188rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeSIconTextDessert {
+  width: 0.688rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.SizeMDessert {
+  width: 6.563rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid #c1b6ad;
+}
+.SizeMIconDessert {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeMTextDessert {
+  width: 2.688rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeLDessert {
+  width: 6.75rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #c1b6ad;
+  cursor: pointer;
+}
+.SizeLIconDessert {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.SizeLIconTextDessert {
+  width: 0.625rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+.SizeLTextDessert {
+  width: 2.875rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Additives1Dessert {
+  width: 7.375rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  border: 1px solid #c1b6ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.AdditivesIcon1Dessert {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AdditivesText1Dessert {
+  width: 2.875rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.Additives2Dessert {
+  width: 6.188rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  border: 1px solid #c1b6ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.AdditivesIcon2Dessert {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AdditivesText2Dessert {
+  width: 2.313rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.Additives3Dessert {
+  width: 5.938rem;
+  height: 2.875rem;
+  border-radius: 6.25rem;
+  border: 1px solid #c1b6ad;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.AdditivesIcon3Dessert {
+  width: 1.875rem;
+  height: 1.875rem;
+  border-radius: 6.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.AdditivesText3Dessert {
+  width: 2.063rem;
+  height: 1.5rem;
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.coffeeBuyMenuTotalText2Dessert {
+  width: 13.063rem;
+  height: 1.875rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: end;
+}
+
+/* Вкладка покупки десерта конец//////////////////////////////////////////////////////////////////////////////*/
 
 /* Main container second END //////////////////////////////////////////////////////////////////////////////*/
 

@@ -392,6 +392,258 @@ coffeeBuyMenuClose.forEach(function (close) {
 
 // Coffee Buy Menu click End
 
+// Tea buy menu click
+
+const teaGrid1 = document.querySelector(".teaGrid1");
+const teaGrid2 = document.querySelector(".teaGrid2");
+const teaGrid3 = document.querySelector(".teaGrid3");
+const teaGrid4 = document.querySelector(".teaGrid4");
+const TeaBuyMenuClose = document.querySelectorAll(".TeaBuyMenuClose");
+const MoroccanID = document.getElementById("MoroccanID");
+const GingeID = document.getElementById("GingeID");
+const CranberryID = document.getElementById("CranberryID");
+const SeaBuckthornID = document.getElementById("SeaBuckthornID");
+
+teaGrid1.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  MoroccanID.style.display = "flex";
+});
+teaGrid2.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  GingeID.style.display = "flex";
+});
+teaGrid3.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  CranberryID.style.display = "flex";
+});
+teaGrid4.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  SeaBuckthornID.style.display = "flex";
+});
+
+TeaBuyMenuClose.forEach(function (close) {
+  close.addEventListener("click", function () {
+    backDrop.style.display = "none";
+    MoroccanID.style.display = "none";
+    GingeID.style.display = "none";
+    CranberryID.style.display = "none";
+    SeaBuckthornID.style.display = "none";
+  });
+});
+
+// Tea buy menu click end
+
+// Dessert buy menu click
+const dessertGrid1 = document.querySelector(".dessertGrid1");
+const dessertGrid2 = document.querySelector(".dessertGrid2");
+const dessertGrid3 = document.querySelector(".dessertGrid3");
+const dessertGrid4 = document.querySelector(".dessertGrid4");
+const dessertGrid5 = document.querySelector(".dessertGrid5");
+const dessertGrid6 = document.querySelector(".dessertGrid6");
+const dessertGrid7 = document.querySelector(".dessertGrid7");
+const dessertGrid8 = document.querySelector(".dessertGrid8");
+const DessertBuyMenuClose = document.querySelectorAll(".DessertBuyMenuClose");
+
+const MarbleCheesecakeID = document.getElementById("MarbleCheesecakeID");
+const RedVelvetID = document.getElementById("RedVelvetID");
+const CheesecakesID = document.getElementById("CheesecakesID");
+const CremeBruleeID = document.getElementById("CremeBruleeID");
+const PancakesID = document.getElementById("PancakesID");
+const HoneyCakeID = document.getElementById("HoneyCakeID");
+const ChocolateCakeID = document.getElementById("ChocolateCakeID");
+const BlackForestID = document.getElementById("BlackForestID");
+
+dessertGrid1.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  MarbleCheesecakeID.style.display = "flex";
+});
+dessertGrid2.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  RedVelvetID.style.display = "flex";
+});
+dessertGrid3.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  CheesecakesID.style.display = "flex";
+});
+dessertGrid4.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  CremeBruleeID.style.display = "flex";
+});
+dessertGrid5.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  PancakesID.style.display = "flex";
+});
+dessertGrid6.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  HoneyCakeID.style.display = "flex";
+});
+dessertGrid7.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  ChocolateCakeID.style.display = "flex";
+});
+dessertGrid8.addEventListener("click", function () {
+  backDrop.style.display = "flex";
+  BlackForestID.style.display = "flex";
+});
+
+DessertBuyMenuClose.forEach(function (close) {
+  close.addEventListener("click", function () {
+    backDrop.style.display = "none";
+    MarbleCheesecakeID.style.display = "none";
+    RedVelvetID.style.display = "none";
+    CheesecakesID.style.display = "none";
+    CremeBruleeID.style.display = "none";
+    PancakesID.style.display = "none";
+    HoneyCakeID.style.display = "none";
+    ChocolateCakeID.style.display = "none";
+    BlackForestID.style.display = "none";
+  });
+});
+
+// Dessert buy menu button click
+const SizeSDessert = document.querySelectorAll(".SizeSDessert");
+const SizeSTextDessert = document.querySelectorAll(".SizeSTextDessert");
+const SizeSIconDessert = document.querySelectorAll(".SizeSIconDessert");
+const SizeMDessert = document.querySelectorAll(".SizeMDessert");
+const SizeMTextDessert = document.querySelectorAll(".SizeMTextDessert");
+const SizeMIconDessert = document.querySelectorAll(".SizeMIconDessert");
+const SizeLDessert = document.querySelectorAll(".SizeLDessert");
+const SizeLTextDessert = document.querySelectorAll(".SizeLTextDessert");
+const SizeLIconDessert = document.querySelectorAll(".SizeLIconDessert");
+
+const Additives1Dessert = document.querySelectorAll(".Additives1Dessert");
+const AdditivesIcon1Dessert = document.querySelectorAll(
+  ".AdditivesIcon1Dessert"
+);
+const AdditivesText1Dessert = document.querySelectorAll(
+  ".AdditivesText1Dessert"
+);
+const Additives2Dessert = document.querySelectorAll(".Additives2Dessert");
+const AdditivesIcon2Dessert = document.querySelectorAll(
+  ".AdditivesIcon2Dessert"
+);
+const AdditivesText2Dessert = document.querySelectorAll(
+  ".AdditivesText2Dessert"
+);
+const Additives3Dessert = document.querySelectorAll(".Additives3Dessert");
+const AdditivesIcon3Dessert = document.querySelectorAll(
+  ".AdditivesIcon3Dessert"
+);
+const AdditivesText3Dessert = document.querySelectorAll(
+  ".AdditivesText3Dessert"
+);
+
+SizeSDessert.forEach((sizeSDessert, index) => {
+  sizeSDessert.addEventListener("click", () => {
+    SizeMDessert[index].classList.remove("SizeActive");
+    SizeMTextDessert[index].classList.remove("SizeActive1");
+    SizeMIconDessert[index].classList.remove("SizeActive2");
+    SizeLDessert[index].classList.remove("SizeActive");
+    SizeLTextDessert[index].classList.remove("SizeActive1");
+    SizeLIconDessert[index].classList.remove("SizeActive2");
+    SizeSIconDessert[index].classList.remove("SizeActive3");
+    sizeSDessert.classList.add("SizeActive");
+    SizeLIconDessert[index].classList.add("SizeActive3");
+    SizeMIconDessert[index].classList.add("SizeActive3");
+    SizeSTextDessert[index].classList.add("SizeActive1");
+    SizeSIconDessert[index].classList.add("SizeActive2");
+  });
+});
+
+SizeMDessert.forEach((sizeMDessert, index) => {
+  sizeMDessert.addEventListener("click", () => {
+    SizeSDessert[index].classList.remove("SizeActive");
+    SizeSTextDessert[index].classList.remove("SizeActive1");
+    SizeSIconDessert[index].classList.remove("SizeActive2");
+    SizeLDessert[index].classList.remove("SizeActive");
+    SizeLTextDessert[index].classList.remove("SizeActive1");
+    SizeLIconDessert[index].classList.remove("SizeActive2");
+    SizeMIconDessert[index].classList.remove("SizeActive3");
+    sizeMDessert.classList.add("SizeActive");
+    SizeLIconDessert[index].classList.add("SizeActive3");
+    SizeMTextDessert[index].classList.add("SizeActive1");
+    SizeMIconDessert[index].classList.add("SizeActive2");
+    SizeSIconDessert[index].classList.add("SizeActive3");
+  });
+});
+
+SizeLDessert.forEach((sizeLDessert, index) => {
+  sizeLDessert.addEventListener("click", () => {
+    SizeMDessert[index].classList.remove("SizeActive");
+    SizeMTextDessert[index].classList.remove("SizeActive1");
+    SizeMIconDessert[index].classList.remove("SizeActive2");
+
+    SizeSDessert[index].classList.remove("SizeActive");
+    SizeSTextDessert[index].classList.remove("SizeActive1");
+    SizeSIconDessert[index].classList.remove("SizeActive2");
+
+    SizeLIconDessert[index].classList.remove("SizeActive2");
+    SizeLIconDessert[index].classList.remove("SizeActive3");
+
+    sizeLDessert.classList.add("SizeActive");
+    SizeLTextDessert[index].classList.add("SizeActive1");
+    SizeLIconDessert[index].classList.add("SizeActive2");
+    SizeSIconDessert[index].classList.add("SizeActive3");
+    SizeMIconDessert[index].classList.add("SizeActive3");
+  });
+});
+
+Additives1Dessert.forEach((additives1Dessert, index) => {
+  additives1Dessert.addEventListener("click", () => {
+    const isActiveDessert = additives1Dessert.classList.contains("SizeActive");
+    if (isActiveDessert) {
+      additives1Dessert.classList.remove("SizeActive");
+      AdditivesText1Dessert[index].classList.remove("SizeActive1");
+      AdditivesIcon1Dessert[index].classList.remove("SizeActive2");
+      AdditivesIcon1Dessert[index].classList.add("SizeActive3");
+    } else {
+      AdditivesIcon1Dessert[index].classList.remove("SizeActive3");
+      additives1Dessert.classList.add("SizeActive");
+      AdditivesText1Dessert[index].classList.add("SizeActive1");
+      AdditivesIcon1Dessert[index].classList.add("SizeActive2");
+    }
+  });
+});
+Additives2Dessert.forEach((additives2Dessert, index) => {
+  additives2Dessert.addEventListener("click", () => {
+    const isActiveDessert = additives2Dessert.classList.contains("SizeActive");
+    if (isActiveDessert) {
+      additives2Dessert.classList.remove("SizeActive");
+      AdditivesText2Dessert[index].classList.remove("SizeActive1");
+      AdditivesIcon2Dessert[index].classList.remove("SizeActive2");
+      AdditivesIcon2Dessert[index].classList.add("SizeActive3");
+    } else {
+      AdditivesIcon2Dessert[index].classList.remove("SizeActive3");
+      additives2Dessert.classList.add("SizeActive");
+      AdditivesText2Dessert[index].classList.add("SizeActive1");
+      AdditivesIcon2Dessert[index].classList.add("SizeActive2");
+    }
+  });
+});
+
+Additives3Dessert.forEach((additives3Dessert, index) => {
+  additives3Dessert.addEventListener("click", () => {
+    const isActiveDessert = additives3Dessert.classList.contains("SizeActive");
+    if (isActiveDessert) {
+      additives3Dessert.classList.remove("SizeActive");
+      AdditivesText3Dessert[index].classList.remove("SizeActive1");
+      AdditivesIcon3Dessert[index].classList.remove("SizeActive2");
+      AdditivesIcon3Dessert[index].classList.add("SizeActive3");
+    } else {
+      AdditivesIcon3Dessert[index].classList.remove("SizeActive3");
+      additives3Dessert.classList.add("SizeActive");
+      AdditivesText3Dessert[index].classList.add("SizeActive1");
+      AdditivesIcon3Dessert[index].classList.add("SizeActive2");
+    }
+  });
+});
+
+// Dessert buy menu button click end
+
+// Dessert buy menu click end
+
+// coffee and tea prise
+
 const CofeeBuyMenu = document.querySelectorAll(".coffeeBuyMenu");
 CofeeBuyMenu.forEach(function (CoffeeBlock) {
   const priseCoffe = CoffeeBlock.querySelector(".coffeeBuyMenuTotalText2");
@@ -466,3 +718,90 @@ CofeeBuyMenu.forEach(function (CoffeeBlock) {
 });
 
 // coffee prise end
+
+// dessert prise
+
+const coffeeBuyMenuDessert = document.querySelectorAll(".coffeeBuyMenuDessert");
+
+coffeeBuyMenuDessert.forEach(function (CoffeeBlockDessert) {
+  const priseCoffeDessert = CoffeeBlockDessert.querySelector(
+    ".coffeeBuyMenuTotalText2Dessert"
+  );
+  const sizeMDessert = CoffeeBlockDessert.querySelector(".SizeMDessert");
+  const sizeLDessert = CoffeeBlockDessert.querySelector(".SizeLDessert");
+  const sizeSDessert = CoffeeBlockDessert.querySelector(".SizeSDessert");
+  const SugarDessert = CoffeeBlockDessert.querySelector(".Additives1Dessert");
+  const CinnamonDessert =
+    CoffeeBlockDessert.querySelector(".Additives2Dessert");
+  const SyrupDessert = CoffeeBlockDessert.querySelector(".Additives3Dessert");
+
+  const basePriceDessert = parseFloat(
+    priseCoffeDessert.textContent.replace("$", "")
+  ); // достаём число из строки и сохраняем базовую цену
+
+  let currentPriceDessert = basePriceDessert; //переменная для хранения текущей суммы
+
+  sizeSDessert.addEventListener("click", function () {
+    priseCoffeDessert.textContent = `$${basePriceDessert.toFixed(2)}`;
+  });
+  sizeMDessert.addEventListener("click", function () {
+    const newPriceDessert = (basePriceDessert + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+    priseCoffeDessert.textContent = `$${newPriceDessert}`;
+  });
+  sizeLDessert.addEventListener("click", function () {
+    const newPriceDessert = (basePriceDessert + 1).toFixed(2); //округляем до 2 знаков после запятой
+    priseCoffeDessert.textContent = `$${newPriceDessert}`;
+  });
+  sizeMDessert.addEventListener("click", function () {
+    const newPriceDessert = (basePriceDessert + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+    priseCoffeDessert.textContent = `$${newPriceDessert}`;
+  });
+
+  SugarDessert.addEventListener("click", function () {
+    if (SugarDessert.classList.contains("SizeActive")) {
+      const newPriceDessert = (currentPriceDessert + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffeDessert.textContent = `$${newPriceDessert}`;
+    } else {
+      const newPriceDessert = currentPriceDessert.toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffeDessert.textContent = `$${newPriceDessert}`;
+    }
+    updatePriceDessert();
+  });
+  CinnamonDessert.addEventListener("click", function () {
+    if (CinnamonDessert.classList.contains("SizeActive")) {
+      const newPriceDessert = (currentPriceDessert + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffeDessert.textContent = `$${newPriceDessert}`;
+    } else {
+      const newPriceDessert = currentPriceDessert.toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffeDessert.textContent = `$${newPriceDessert}`;
+    }
+    updatePriceDessert();
+  });
+  SyrupDessert.addEventListener("click", function () {
+    if (SyrupDessert.classList.contains("SizeActive")) {
+      const newPriceDessert = (currentPriceDessert + 0.5).toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffeDessert.textContent = `$${newPriceDessert}`;
+    } else {
+      const newPriceDessert = currentPriceDessert.toFixed(2); //округляем до 2 знаков после запятой
+      priseCoffeDessert.textContent = `$${newPriceDessert}`;
+    }
+    updatePriceDessert();
+  });
+  function updatePriceDessert() {
+    let currentPriceDessert = basePriceDessert;
+    if (sizeMDessert.classList.contains("SizeActive"))
+      currentPriceDessert += 0.5;
+    if (sizeLDessert.classList.contains("SizeActive")) currentPriceDessert += 1;
+
+    if (SugarDessert.classList.contains("SizeActive"))
+      currentPriceDessert += 0.5;
+    if (CinnamonDessert.classList.contains("SizeActive"))
+      currentPriceDessert += 0.5;
+    if (SyrupDessert.classList.contains("SizeActive"))
+      currentPriceDessert += 0.5;
+
+    priseCoffeDessert.textContent = `$${currentPriceDessert.toFixed(2)}`;
+  }
+});
+
+// dessert prise end
