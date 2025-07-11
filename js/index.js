@@ -805,3 +805,18 @@ coffeeBuyMenuDessert.forEach(function (CoffeeBlockDessert) {
 });
 
 // dessert prise end
+
+// Burger menu
+
+const burgerButton = document.querySelector(".burgerButton");
+const burgerMenu = document.querySelector(".burgerMenu");
+const burgerKrestick = document.querySelector(".burgerKrestick");
+
+burgerButton.addEventListener("click", function () {
+  burgerMenu.style.display = "flex";
+});
+burgerKrestick.addEventListener("click", function () {
+  burgerMenu.style.display = "none";
+});
+
+// Burger menu end
