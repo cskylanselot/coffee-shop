@@ -274,6 +274,7 @@ li {
   font-size: 2rem;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .burgerListMenu .fa-mug-hot {
   width: 2.5rem;
@@ -812,17 +813,16 @@ li {
   font-weight: 600;
 }
 .offerSecondTabsContainer {
+  margin-top: 2.5rem;
   width: 50rem;
   height: 9.375rem;
   display: flex;
   justify-content: center;
 }
 .offerSecondTabs {
-  margin-top: 2.5rem;
   width: 22.563rem;
   height: 2.875rem;
   display: flex;
-  margin: 0auto;
   gap: 1rem;
   justify-content: center;
 }
@@ -927,6 +927,7 @@ li {
   height: 65.75rem;
   gap: 2.5rem;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .coffeeGrid1 {
@@ -984,6 +985,14 @@ li {
   border: 1px solid #c1b6ad;
   border-radius: 2rem;
   cursor: pointer;
+}
+.coffeeGridButton {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 6.25rem;
+  border: 1px solid #665f55;
+  background-image: url(../img/button-icon-dark.jpg);
+  display: none;
 }
 .IrishCoffeeImg {
   width: 19.375rem;
@@ -1956,6 +1965,14 @@ li {
   border-radius: 2rem;
   cursor: pointer;
 }
+.dessertGridButton {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 6.25rem;
+  border: 1px solid #665f55;
+  background-image: url(../img/button-icon-dark.jpg);
+  /* display: none; */
+}
 .dessertH1 {
   width: 16.875rem;
   height: 1.875rem;
@@ -2427,7 +2444,6 @@ li {
   font-family: Inter;
   font-size: 1.5rem;
   color: #e1d4c9;
-  margin-bottom: 1.875rem;
   cursor: context-menu;
 }
 .contactsNumber {

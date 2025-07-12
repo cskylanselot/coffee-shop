@@ -118,6 +118,7 @@ startSlider();
 // menu click
 const coffeeMenuMain = document.querySelector(".coffee-menuMain");
 const heroMenu = document.querySelector(".heroMenu");
+const burgerListMenuText = document.querySelector(".burgerListMenuText");
 const hero = document.querySelector(".hero");
 const header = document.querySelector(".header");
 const StartMenuBack = document.querySelector(".StartMenuBack");
@@ -143,6 +144,10 @@ function menuOpen() {
 coffeeMenuMain.addEventListener("click", menuOpen);
 heroMenu.addEventListener("click", menuOpen);
 StartMenuBack.addEventListener("click", menuOpen);
+burgerListMenuText.addEventListener("click", function () {
+  menuOpen();
+  burgerMenu.style.display = "none";
+});
 // menu click end
 
 // Coffee Tea Dessert menu
@@ -820,3 +825,71 @@ burgerKrestick.addEventListener("click", function () {
 });
 
 // Burger menu end
+
+// Media button cklick
+
+// Coffee media
+
+const coffeeGridButton = document.querySelector(".coffeeGridButton");
+
+let coffeeGridButtonActive = true;
+
+coffeeGridButton.addEventListener("click", function () {
+  if (coffeeGridButtonActive == true) {
+    coffeeGrid1.style.display = "none";
+    coffeeGrid2.style.display = "none";
+    coffeeGrid3.style.display = "none";
+    coffeeGrid4.style.display = "none";
+    coffeeGrid5.style.display = "grid";
+    coffeeGrid6.style.display = "grid";
+    coffeeGrid7.style.display = "grid";
+    coffeeGrid8.style.display = "grid";
+    coffeeGridButtonActive = false;
+  } else {
+    coffeeGrid1.style.display = "grid";
+    coffeeGrid2.style.display = "grid";
+    coffeeGrid3.style.display = "grid";
+    coffeeGrid4.style.display = "grid";
+    coffeeGrid5.style.display = "none";
+    coffeeGrid6.style.display = "none";
+    coffeeGrid7.style.display = "none";
+    coffeeGrid8.style.display = "none";
+    coffeeGridButtonActive = true;
+  }
+});
+
+// Coffee media end
+
+// Dessert media
+
+const dessertGridButton = document.querySelector(".dessertGridButton");
+
+let dessertGridButtonActive = true;
+
+dessertGridButton.addEventListener("click", function () {
+  if (dessertGridButtonActive == true) {
+    dessertGrid1.style.display = "none";
+    dessertGrid2.style.display = "none";
+    dessertGrid3.style.display = "none";
+    dessertGrid4.style.display = "none";
+    dessertGrid5.style.display = "grid";
+    dessertGrid6.style.display = "grid";
+    dessertGrid7.style.display = "grid";
+    dessertGrid8.style.display = "grid";
+    dessertGridButtonActive = false;
+  } else {
+    dessertGrid1.style.display = "grid";
+    dessertGrid2.style.display = "grid";
+    dessertGrid3.style.display = "grid";
+    dessertGrid4.style.display = "grid";
+    dessertGrid5.style.display = "none";
+    dessertGrid6.style.display = "none";
+    dessertGrid7.style.display = "none";
+    dessertGrid8.style.display = "none";
+    dessertGridButtonActive = true;
+  }
+});
+
+// Dessert media end
+
+// Media button cklick end

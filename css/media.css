@@ -1,0 +1,157 @@
+@media (max-width: 48rem) {
+  .mainContainer {
+    width: 48rem;
+    height: 348.5rem;
+  }
+  .header {
+    width: 48rem;
+    height: 45.25rem;
+  }
+  .nav {
+    display: none;
+  }
+  .coffee-menu {
+    display: none;
+  }
+  .burgerButton {
+    display: flex;
+  }
+  .hero {
+    width: 48rem;
+    height: 40.25rem;
+  }
+  .slider {
+    width: 48rem;
+    height: 54.625rem;
+  }
+  .about {
+    width: 48rem;
+    height: 106.875rem;
+  }
+  .aboutMain {
+    width: 43rem;
+  }
+  .aboutText {
+    width: 43rem;
+  }
+  .aboutImgMain {
+    width: 43rem;
+    height: 76.25rem;
+    display: grid;
+  }
+  .aboutImgLeft {
+    width: 43rem;
+    height: 36.875rem;
+  }
+  .aboutImgRight {
+    display: none;
+  }
+  .mobileApp {
+    width: 48rem;
+    height: 67rem;
+  }
+  .mobileContainer {
+    width: 43rem;
+    height: 67rem;
+    margin-top: 0rem;
+    display: grid;
+  }
+  .offer {
+  }
+  .offerMain {
+    width: 43rem;
+    height: 21.375rem;
+    display: grid;
+  }
+  .offerButtons {
+    margin-top: 2.5rem;
+  }
+  .contacts {
+    width: 48rem;
+    height: 46rem;
+  }
+  .contactsMain {
+    width: 43rem;
+    height: 46rem;
+    padding: 6.25rem 3.75rem 6.25rem 3.75rem;
+    display: grid;
+    gap: 6.25rem;
+  }
+  .contactsOffer {
+    width: 35.5rem;
+    height: 15.625rem;
+    margin: 0;
+  }
+  .contactsInfo {
+    width: 35.5rem;
+    height: 11.625rem;
+  }
+  .mainSecond {
+    width: 48rem;
+    height: 93.938rem;
+  }
+  .secondContainer {
+    width: 43rem;
+  }
+  .offerSecond {
+    width: 43rem;
+    height: 19.438rem;
+    margin-top: 1.25rem;
+  }
+  .offerSecondText {
+    width: 43rem;
+    height: 14.063rem;
+  }
+  .offerSecondTabsContainer {
+    width: 43rem;
+    height: 2.875rem;
+  }
+  .gridCoffeeMain {
+    width: 43rem;
+    height: 65.75rem;
+  }
+  .coffeeGrid5 {
+    display: none;
+  }
+  .coffeeGrid6 {
+    display: none;
+  }
+  .coffeeGrid7 {
+    display: none;
+  }
+  .coffeeGrid8 {
+    display: none;
+  }
+  .coffeeGridButton {
+    display: flex;
+    cursor: pointer;
+  }
+
+  .gridTeaMain {
+    width: 43rem;
+    height: 65.75rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gridDessertMain {
+    width: 43rem;
+    height: 65.75rem;
+    justify-content: center;
+  }
+  .dessertGrid5 {
+    display: none;
+  }
+  .dessertGrid6 {
+    display: none;
+  }
+  .dessertGrid7 {
+    display: none;
+  }
+  .dessertGrid8 {
+    display: none;
+  }
+  .dessertGridButton {
+    display: flex;
+    cursor: pointer;
+  }
+}
