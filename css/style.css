@@ -1382,6 +1382,12 @@ li {
   display: flex;
   gap: 0.5rem;
 }
+.SizeTabsDessert {
+  width: 27.375rem;
+  height: 2.875rem;
+  display: flex;
+  gap: 0.5rem;
+}
 .SizeActive {
   background-color: #403f3d;
 }
@@ -1971,7 +1977,7 @@ li {
   border-radius: 6.25rem;
   border: 1px solid #665f55;
   background-image: url(../img/button-icon-dark.jpg);
-  /* display: none; */
+  display: none;
 }
 .dessertH1 {
   width: 16.875rem;

@@ -166,6 +166,9 @@ coffeeTabsMain.addEventListener("click", function () {
   teaTabsMain.classList.remove("activeTabs");
   dessertTabsMain.classList.remove("activeTabs");
   mainSecond.style.height = 83 + "rem";
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    mainSecond.style.height = 98.938 + "rem";
+  }
 });
 teaTabsMain.addEventListener("click", function () {
   gridCoffeeMain.style.display = "none";
@@ -175,6 +178,9 @@ teaTabsMain.addEventListener("click", function () {
   coffeeTabsMain.classList.remove("activeTabs");
   dessertTabsMain.classList.remove("activeTabs");
   mainSecond.style.height = 48.875 + "rem";
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    mainSecond.style.height = 98.938 + "rem";
+  }
 });
 dessertTabsMain.addEventListener("click", function () {
   gridCoffeeMain.style.display = "none";
@@ -184,6 +190,9 @@ dessertTabsMain.addEventListener("click", function () {
   coffeeTabsMain.classList.remove("activeTabs");
   teaTabsMain.classList.remove("activeTabs");
   mainSecond.style.height = 83 + "rem";
+  if (window.matchMedia("(max-width: 768px)").matches) {
+    mainSecond.style.height = 98.938 + "rem";
+  }
 });
 // End Coffee Tea Dessert menu
 
@@ -280,14 +289,18 @@ SizeS.forEach((sizeS, index) => {
     SizeMText[index].classList.remove("SizeActive1");
     SizeMIcon[index].classList.remove("SizeActive2");
     SizeL[index].classList.remove("SizeActive");
+
     SizeLText[index].classList.remove("SizeActive1");
     SizeLIcon[index].classList.remove("SizeActive2");
     SizeSIcon[index].classList.remove("SizeActive3");
+
     sizeS.classList.add("SizeActive");
     SizeLIcon[index].classList.add("SizeActive3");
     SizeMIcon[index].classList.add("SizeActive3");
     SizeSText[index].classList.add("SizeActive1");
     SizeSIcon[index].classList.add("SizeActive2");
+
+    AdditivesClear();
   });
 });
 
@@ -296,15 +309,19 @@ SizeM.forEach((sizeM, index) => {
     SizeS[index].classList.remove("SizeActive");
     SizeSText[index].classList.remove("SizeActive1");
     SizeSIcon[index].classList.remove("SizeActive2");
+
     SizeL[index].classList.remove("SizeActive");
     SizeLText[index].classList.remove("SizeActive1");
     SizeLIcon[index].classList.remove("SizeActive2");
     SizeMIcon[index].classList.remove("SizeActive3");
+
     sizeM.classList.add("SizeActive");
     SizeLIcon[index].classList.add("SizeActive3");
     SizeMText[index].classList.add("SizeActive1");
     SizeMIcon[index].classList.add("SizeActive2");
     SizeSIcon[index].classList.add("SizeActive3");
+
+    AdditivesClear();
   });
 });
 
@@ -317,7 +334,6 @@ SizeL.forEach((sizeL, index) => {
     SizeS[index].classList.remove("SizeActive");
     SizeSText[index].classList.remove("SizeActive1");
     SizeSIcon[index].classList.remove("SizeActive2");
-
     SizeLIcon[index].classList.remove("SizeActive2");
     SizeLIcon[index].classList.remove("SizeActive3");
 
@@ -326,6 +342,8 @@ SizeL.forEach((sizeL, index) => {
     SizeLIcon[index].classList.add("SizeActive2");
     SizeSIcon[index].classList.add("SizeActive3");
     SizeMIcon[index].classList.add("SizeActive3");
+
+    AdditivesClear();
   });
 });
 
@@ -392,6 +410,50 @@ coffeeBuyMenuClose.forEach(function (close) {
     CoffeeWithCognacID.style.display = "none";
   });
 });
+
+// Функция для очистки классов при смене выбора размера стакана для коффе и чая
+function AdditivesClear() {
+  Additives1.forEach((additives1, index) => {
+    additives1.classList.remove("SizeActive");
+    AdditivesText1[index].classList.remove("SizeActive1");
+    AdditivesIcon1[index].classList.remove("SizeActive2");
+    AdditivesIcon1[index].classList.add("SizeActive3");
+  });
+  Additives2.forEach((additives1, index) => {
+    additives1.classList.remove("SizeActive");
+    AdditivesText2[index].classList.remove("SizeActive1");
+    AdditivesIcon2[index].classList.remove("SizeActive2");
+    AdditivesIcon2[index].classList.add("SizeActive3");
+  });
+  Additives3.forEach((additives1, index) => {
+    additives1.classList.remove("SizeActive");
+    AdditivesText3[index].classList.remove("SizeActive1");
+    AdditivesIcon3[index].classList.remove("SizeActive2");
+    AdditivesIcon3[index].classList.add("SizeActive3");
+  });
+}
+
+// Функция для очистки классов при смене выбора размера стакана для дессертов
+function AdditivesClearDessert() {
+  Additives1Dessert.forEach((additives1Dessert, index) => {
+    additives1Dessert.classList.remove("SizeActive");
+    AdditivesText1Dessert[index].classList.remove("SizeActive1");
+    AdditivesIcon1Dessert[index].classList.remove("SizeActive2");
+    AdditivesIcon1Dessert[index].classList.add("SizeActive3");
+  });
+  Additives2Dessert.forEach((additives1Dessert, index) => {
+    additives1Dessert.classList.remove("SizeActive");
+    AdditivesText2Dessert[index].classList.remove("SizeActive1");
+    AdditivesIcon2Dessert[index].classList.remove("SizeActive2");
+    AdditivesIcon2Dessert[index].classList.add("SizeActive3");
+  });
+  Additives3Dessert.forEach((additives1Dessert, index) => {
+    additives1Dessert.classList.remove("SizeActive");
+    AdditivesText3Dessert[index].classList.remove("SizeActive1");
+    AdditivesIcon3Dessert[index].classList.remove("SizeActive2");
+    AdditivesIcon3Dessert[index].classList.add("SizeActive3");
+  });
+}
 
 // Coffee Buy Menu Button click end
 
@@ -544,14 +606,18 @@ SizeSDessert.forEach((sizeSDessert, index) => {
     SizeMTextDessert[index].classList.remove("SizeActive1");
     SizeMIconDessert[index].classList.remove("SizeActive2");
     SizeLDessert[index].classList.remove("SizeActive");
+
     SizeLTextDessert[index].classList.remove("SizeActive1");
     SizeLIconDessert[index].classList.remove("SizeActive2");
     SizeSIconDessert[index].classList.remove("SizeActive3");
+
     sizeSDessert.classList.add("SizeActive");
     SizeLIconDessert[index].classList.add("SizeActive3");
     SizeMIconDessert[index].classList.add("SizeActive3");
     SizeSTextDessert[index].classList.add("SizeActive1");
     SizeSIconDessert[index].classList.add("SizeActive2");
+
+    AdditivesClearDessert();
   });
 });
 
@@ -561,14 +627,18 @@ SizeMDessert.forEach((sizeMDessert, index) => {
     SizeSTextDessert[index].classList.remove("SizeActive1");
     SizeSIconDessert[index].classList.remove("SizeActive2");
     SizeLDessert[index].classList.remove("SizeActive");
+
     SizeLTextDessert[index].classList.remove("SizeActive1");
     SizeLIconDessert[index].classList.remove("SizeActive2");
     SizeMIconDessert[index].classList.remove("SizeActive3");
+
     sizeMDessert.classList.add("SizeActive");
     SizeLIconDessert[index].classList.add("SizeActive3");
     SizeMTextDessert[index].classList.add("SizeActive1");
     SizeMIconDessert[index].classList.add("SizeActive2");
     SizeSIconDessert[index].classList.add("SizeActive3");
+
+    AdditivesClearDessert();
   });
 });
 
@@ -581,7 +651,6 @@ SizeLDessert.forEach((sizeLDessert, index) => {
     SizeSDessert[index].classList.remove("SizeActive");
     SizeSTextDessert[index].classList.remove("SizeActive1");
     SizeSIconDessert[index].classList.remove("SizeActive2");
-
     SizeLIconDessert[index].classList.remove("SizeActive2");
     SizeLIconDessert[index].classList.remove("SizeActive3");
 
@@ -590,6 +659,8 @@ SizeLDessert.forEach((sizeLDessert, index) => {
     SizeLIconDessert[index].classList.add("SizeActive2");
     SizeSIconDessert[index].classList.add("SizeActive3");
     SizeMIconDessert[index].classList.add("SizeActive3");
+
+    AdditivesClearDessert();
   });
 });
 

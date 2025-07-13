@@ -56,8 +56,6 @@
     margin-top: 0rem;
     display: grid;
   }
-  .offer {
-  }
   .offerMain {
     width: 43rem;
     height: 21.375rem;
@@ -88,10 +86,11 @@
   }
   .mainSecond {
     width: 48rem;
-    height: 93.938rem;
+    height: 98.938rem;
   }
   .secondContainer {
     width: 43rem;
+    height: 93.938rem;
   }
   .offerSecond {
     width: 43rem;
@@ -126,6 +125,105 @@
     display: flex;
     cursor: pointer;
   }
+
+  /* Меню для покупки коффе/чая/десертов для планшетов */
+
+  .coffeeBuyMenuContainer {
+    width: 43rem;
+    height: 39.125rem;
+  }
+  .TeaBuyMenuContainer {
+    width: 43rem;
+    height: 39.125rem;
+  }
+  .DessertBuyMenuContainer {
+    width: 43rem;
+    height: 35.75rem;
+  }
+  .coffeeBuyMenu {
+    width: 41rem;
+    height: 37.125rem;
+  }
+  .DessertBuyMenuContainer .coffeeBuyMenuMain {
+    width: 21.625rem;
+    height: 33.75rem;
+  }
+  .coffeeBuyMenuDessert {
+    width: 41rem;
+    height: 33.75rem;
+  }
+  .coffeeBuyMenuMain {
+    width: 21.625rem;
+    height: 37.125rem;
+  }
+  .coffeeBuyMenuTitle {
+    width: 20.375rem;
+    height: 5.625rem;
+  }
+  .coffeeBuyMenuTitleH1 {
+    width: 20.375rem;
+    height: 1.875rem;
+  }
+  .coffeeBuyMenuTitleText {
+    width: 20.375rem;
+    height: 3rem;
+  }
+  .coffeeBuyMenuSize {
+    width: 20.375rem;
+    height: 8.25rem;
+  }
+  .DessertBuyMenuContainer .coffeeBuyMenuSize {
+    width: 20.375rem;
+    height: 4.875rem;
+  }
+  .coffeeBuyMenuSizeText {
+    width: 2rem;
+    height: 1.5rem;
+  }
+  .SizeTabs {
+    width: 20.375rem;
+    height: 6.25rem;
+    flex-wrap: wrap;
+  }
+  .SizeTabsDessert {
+    width: 20.375rem;
+    height: 2.875rem;
+  }
+  .coffeeBuyMenuAdditives {
+    width: 20.375rem;
+    height: 8.25rem;
+  }
+  .coffeeBuyMenuAdditivesMain {
+    width: 20.375rem;
+    height: 8.25rem;
+  }
+  .coffeeBuyMenuAdditivesTabs {
+    width: 20.375rem;
+    height: 6.25rem;
+    flex-wrap: wrap;
+  }
+  .coffeeBuyMenuTotal {
+    width: 20.375rem;
+    height: 1.875rem;
+  }
+  .coffeeBuyMenuAlert {
+    width: 20.375rem;
+    height: 4.125rem;
+  }
+  .coffeeBuyMenuClose {
+    width: 20.375rem;
+    height: 2.75rem;
+  }
+  .TeaBuyMenuClose {
+    width: 20.375rem;
+    height: 2.75rem;
+  }
+  .DessertBuyMenuClose {
+    width: 20.375rem;
+    height: 2.75rem;
+  }
+
+  /* Меню для покупки коффе/чая/десертов для планшетов end */
 
   .gridTeaMain {
     width: 43rem;
