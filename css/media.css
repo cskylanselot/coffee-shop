@@ -253,3 +253,485 @@
     cursor: pointer;
   }
 }
+@media (max-width: 23.75rem) {
+  .mainContainer {
+    width: 23.75em;
+    height: 291.375rem;
+  }
+  .header {
+    width: 23.75rem;
+    height: 39.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .hero {
+    width: 23.75rem;
+    height: 34.5rem;
+    padding: 0 16px;
+  }
+  .hero-text {
+    margin-top: 3.75rem;
+    margin-left: 1rem;
+    width: 19.75rem;
+    height: 27rem;
+  }
+  .hero-textMain {
+    width: 19.75rem;
+    height: 9rem;
+    font-size: 2.625rem;
+    padding: 0;
+  }
+  .hero-textSaid {
+    width: 19.75rem;
+    height: 9rem;
+    margin-top: 2.5rem;
+    padding: 0;
+  }
+  .heroMenu {
+    margin: 0;
+  }
+  .heroMenu .fa-mug-hot {
+    opacity: 1;
+  }
+  .burgerMenu {
+    width: 23.75rem;
+    height: 51.5rem;
+    right: 0;
+  }
+  .burgerMenuHeader {
+    width: 23.75rem;
+  }
+  .burgerListContainer {
+    width: 23.75rem;
+    padding: 3.75rem 1rem 3.75rem 1rem;
+  }
+  .burgerListText {
+    width: 23.75rem;
+  }
+  .burgerListMenu {
+    width: 23.75rem;
+  }
+  .slider {
+    width: 23.75rem;
+    height: 43.5rem;
+  }
+  .sliderText {
+    width: 21.75rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+  .arrowLeft {
+    display: none;
+  }
+  .arrowRight {
+    display: none;
+  }
+  .sliderContainer {
+    width: 21.75rem;
+    height: 36rem;
+  }
+  .sliderMain {
+    width: 21.75rem;
+    height: 33.25rem;
+    gap: 2.5rem;
+  }
+  .coffeeSlider1 {
+    width: 21.75rem;
+    height: 33.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .coffeeSlider2 {
+    width: 21.75rem;
+    height: 33.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .coffeeSlider3 {
+    width: 21.75rem;
+    height: 33.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .coffeeTextSliderMain {
+    width: 21.75rem;
+  }
+  .coffeeTextSliderPrice {
+    width: 21.75rem;
+  }
+  .coffeeTextSliderText {
+    width: 21.75rem;
+  }
+  .about {
+    width: 23.75rem;
+    height: 98.75rem;
+  }
+  .aboutMain {
+    width: 21.75rem;
+    height: 20rem;
+    margin-left: 1rem;
+  }
+  .aboutText {
+    width: 21.75rem;
+    height: 20rem;
+    font-size: 2rem;
+    text-align: start;
+  }
+  .aboutImgMain {
+    width: 21.75rem;
+    height: 76.25rem;
+    display: grid;
+  }
+  .aboutImgLeft {
+    width: 21.75rem;
+    height: 36.875rem;
+  }
+  .aboutImg1 {
+    width: 21.75rem;
+    height: 36.875rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .aboutImg2 {
+    width: 21.75rem;
+    height: 36.875rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .aboutImgRight {
+    display: none;
+  }
+  .mobileApp {
+    width: 23.75rem;
+    height: 48rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 6.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .mobileContainer {
+    width: 21.75rem;
+    height: 48rem;
+    margin-top: 0rem;
+    display: grid;
+    gap: 0rem;
+  }
+  */ .offer {
+    width: 21.75rem;
+    height: 23.75rem;
+  }
+  .offerMain {
+    width: 21.75rem;
+    height: 23.75rem;
+    display: grid;
+  }
+  .offerH1 {
+    width: 21.75rem;
+    height: 5rem;
+    font-size: 2rem;
+  }
+  .offerText {
+    width: 21.75rem;
+    height: 4.5rem;
+    font-size: 1rem;
+  }
+  .offerButtons {
+    width: 12.5rem;
+    height: 9.25rem;
+    margin-top: 2.5rem;
+    flex-direction: column;
+  }
+  .mobileScreens {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(../img/mobile-screens.png);
+    width: 21.75rem;
+    height: 21.75rem;
+    margin-top: 6.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  .contacts {
+    width: 23.75rem;
+    height: 32.875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .contactsMain {
+    width: 21.75rem;
+    height: 32.875rem;
+    padding: 3.75rem 1rem 3.75rem 1rem;
+    display: grid;
+    gap: 2.5rem;
+  }
+  .contactsOffer {
+    width: 19.75rem;
+    height: 11.25rem;
+    margin: 0;
+  }
+  .contactsOfferText {
+    width: 19.75rem;
+    height: 5rem;
+    font-size: 2rem;
+    margin: 0;
+  }
+  .contactsInfo {
+    width: 35.5rem;
+    height: 11.625rem;
+  }
+  .mainSecond {
+    width: 23.75rem;
+    height: 155.625rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .secondContainer {
+    width: 21.75rem;
+    height: 149.375rem;
+  }
+  .offerSecond {
+    width: 21.75rem;
+    height: 12.875rem;
+    margin-top: 1.25rem;
+  }
+  .offerSecondText {
+    width: 21.75rem;
+    height: 7.5rem;
+    font-size: 2rem;
+  }
+  .offerSecondTabsContainer {
+    width: 21.563rem;
+    height: 2.875rem;
+  }
+  .offerSecondTabs {
+    width: 21.563rem;
+    height: 2.875rem;
+    gap: 0.5rem;
+  }
+  .gridCoffeeMain {
+    width: 21.75rem;
+    height: 134rem;
+  }
+  .coffeeGrid5 {
+    display: none;
+  }
+  .coffeeGrid6 {
+    display: none;
+  }
+  .coffeeGrid7 {
+    display: none;
+  }
+  .coffeeGrid8 {
+    display: none;
+  }
+  .coffeeGridButton {
+    display: flex;
+    cursor: pointer;
+  }
+
+  /* Меню для покупки коффе/чая/десертов для планшетов */
+
+  .coffeeBuyMenuContainer {
+    width: 21.375rem;
+    height: 39.125rem;
+    top: 20%;
+    left: 20%;
+  }
+  .TeaBuyMenuContainer {
+    width: 21.375rem;
+    height: 39.125rem;
+    top: 20%;
+    left: 20%;
+  }
+  .DessertBuyMenuContainer {
+    width: 21.375rem;
+    height: 35.75rem;
+    top: 20%;
+    left: 20%;
+  }
+  .coffeeBuyMenu {
+    width: 19.375rem;
+    height: 37.125rem;
+  }
+  .coffeeBuyMenuMain {
+    width: 19.375rem;
+    height: 33.75rem;
+    padding-left: 0;
+  }
+  .DessertBuyMenuContainer .coffeeBuyMenuMain {
+    width: 19.375rem;
+    height: 33.75rem;
+    padding-left: 0;
+  }
+  .coffeeBuyMenuDessert {
+    width: 21.375rem;
+    height: 33.75rem;
+  }
+  .coffeeBuyMenuMain {
+    width: 21.625rem;
+    height: 37.125rem;
+  }
+  .coffeeBuyMenuTitle {
+    width: 19.375rem;
+    height: 5.625rem;
+  }
+  .coffeeBuyMenuTitleH1 {
+    width: 19.375rem;
+    height: 1.875rem;
+  }
+  .coffeeBuyMenuTitleText {
+    width: 19.375rem;
+    height: 3rem;
+  }
+  .coffeeBuyMenuSize {
+    width: 19.375rem;
+    height: 8.25rem;
+  }
+  .DessertBuyMenuContainer .coffeeBuyMenuSize {
+    width: 19.375rem;
+    height: 4.875rem;
+  }
+  .coffeeBuyMenuSizeText {
+    width: 2rem;
+    height: 1.5rem;
+  }
+  .SizeTabs {
+    width: 19.375rem;
+    height: 6.25rem;
+    flex-wrap: wrap;
+  }
+  .SizeTabsDessert {
+    width: 19.375rem;
+    height: 2.875rem;
+  }
+  .coffeeBuyMenuAdditives {
+    width: 19.375rem;
+    height: 8.25rem;
+  }
+  .coffeeBuyMenuAdditivesMain {
+    width: 19.375rem;
+    height: 8.25rem;
+  }
+  .coffeeBuyMenuAdditivesTabs {
+    width: 19.375rem;
+    height: 6.25rem;
+    flex-wrap: wrap;
+  }
+  .coffeeBuyMenuTotal {
+    width: 19.375rem;
+    height: 1.875rem;
+  }
+  .coffeeBuyMenuAlert {
+    width: 19.375rem;
+    height: 4.125rem;
+  }
+  .coffeeBuyMenuClose {
+    width: 19.375rem;
+    height: 2.75rem;
+  }
+  .TeaBuyMenuClose {
+    width: 19.375rem;
+    height: 2.75rem;
+  }
+  .DessertBuyMenuClose {
+    width: 19.375rem;
+    height: 2.75rem;
+  }
+
+  /* Меню для покупки коффе/чая/десертов для планшетов end */
+
+  .gridTeaMain {
+    width: 21.75rem;
+    height: 134rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gridDessertMain {
+    width: 21.75rem;
+    height: 134rem;
+    justify-content: center;
+  }
+  .dessertGrid5 {
+    display: none;
+  }
+  .dessertGrid6 {
+    display: none;
+  }
+  .dessertGrid7 {
+    display: none;
+  }
+  .dessertGrid8 {
+    display: none;
+  }
+  .dessertGridButton {
+    display: flex;
+    cursor: pointer;
+  }
+  /* Меню для убирания фоток мобилки */
+  .coffeeBuyMenuContainer .IrishCoffeeImg {
+    display: none;
+  }
+  .coffeeBuyMenuContainer .KahluaCoffeeImg {
+    display: none;
+  }
+  .coffeeBuyMenuContainer .HoneyRafImg {
+    display: none;
+  }
+  .coffeeBuyMenuContainer .IceCappuccinoImg {
+    display: none;
+  }
+  .coffeeBuyMenuContainer .EspressoImg {
+    display: none;
+  }
+  .coffeeBuyMenuContainer .LatteImg {
+    display: none;
+  }
+  .coffeeBuyMenuContainer .LatteMacchiatoImg {
+    display: none;
+  }
+  .coffeeBuyMenuContainer .CoffeeWithCognacImg {
+    display: none;
+  }
+  .TeaBuyMenuContainer .MoroccanImg {
+    display: none;
+  }
+  .TeaBuyMenuContainer .GingeImg {
+    display: none;
+  }
+  .TeaBuyMenuContainer .CranberryImg {
+    display: none;
+  }
+  .TeaBuyMenuContainer .SeaBuckthornImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .MarbleCheesecakeImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .RedVelvetImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .CheesecakesImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .CremeBruleeImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .PancakesImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .HoneyCakeImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .ChocolateCakeImg {
+    display: none;
+  }
+  .DessertBuyMenuContainer .BlackForestImg {
+    display: none;
+  }
+}

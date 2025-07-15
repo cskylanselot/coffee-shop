@@ -359,7 +359,7 @@ li {
   transition: 1s;
 }
 .heroMenu .fa-mug-hot {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.7rem;
   opacity: 0;
   transition: 1s;
 }
@@ -375,7 +375,6 @@ li {
 
 /* Первый  main container first //////////////////////////////////////////////////////////////////////////////*/
 .mainFirst {
-  /* display: none; */
 }
 .slider {
   width: 90rem;
@@ -443,7 +442,7 @@ li {
   font-size: 1rem;
   cursor: context-menu;
 }
-.coffeeTextSliderPriсe {
+.coffeeTextSliderPrice {
   margin-top: 1.25rem;
   width: 30rem;
   height: 2rem;
@@ -783,6 +782,14 @@ li {
   color: #403f3d;
 }
 .mobileScreens {
+  width: 39.375rem;
+  height: 39.375rem;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-image: url(../img/mobile-screens.png);
+  display: flex;
+  justify-content: center;
 }
 /* Конец main container //////////////////////////////////////////////////////////////////////////////*/
 

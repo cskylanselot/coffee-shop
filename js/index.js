@@ -76,6 +76,11 @@ function nextSlide() {
   offset += 50;
   if (offset > 100) offset = 0;
   updateSlider();
+  // if (window.matchMedia("(max-width: 380px)").matches) {
+  //   offset += 21.75;
+  //   if (offset > 65.25) offset = 0;
+  //   updateSlider();
+  // }
 }
 
 function prevSlide() {
@@ -169,6 +174,9 @@ coffeeTabsMain.addEventListener("click", function () {
   if (window.matchMedia("(max-width: 768px)").matches) {
     mainSecond.style.height = 98.938 + "rem";
   }
+  if (window.matchMedia("(max-width: 380px)").matches) {
+    mainSecond.style.height = 155.625 + "rem";
+  }
 });
 teaTabsMain.addEventListener("click", function () {
   gridCoffeeMain.style.display = "none";
@@ -181,6 +189,9 @@ teaTabsMain.addEventListener("click", function () {
   if (window.matchMedia("(max-width: 768px)").matches) {
     mainSecond.style.height = 98.938 + "rem";
   }
+  if (window.matchMedia("(max-width: 380px)").matches) {
+    mainSecond.style.height = 155.625 + "rem";
+  }
 });
 dessertTabsMain.addEventListener("click", function () {
   gridCoffeeMain.style.display = "none";
@@ -192,6 +203,9 @@ dessertTabsMain.addEventListener("click", function () {
   mainSecond.style.height = 83 + "rem";
   if (window.matchMedia("(max-width: 768px)").matches) {
     mainSecond.style.height = 98.938 + "rem";
+  }
+  if (window.matchMedia("(max-width: 380px)").matches) {
+    mainSecond.style.height = 155.625 + "rem";
   }
 });
 // End Coffee Tea Dessert menu
