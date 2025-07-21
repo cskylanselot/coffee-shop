@@ -266,9 +266,9 @@
     gap: 20px;
   }
   .hero {
-    width: 23.75rem;
+    width: 22.75rem;
     height: 34.5rem;
-    padding: 0 16px;
+    padding: 0 1rem;
   }
   .hero-text {
     margin-top: 3.75rem;
@@ -293,6 +293,12 @@
   }
   .heroMenu .fa-mug-hot {
     opacity: 1;
+  }
+  .video {
+    display: none;
+  }
+  .videoPhone {
+    display: flex;
   }
   .burgerMenu {
     width: 23.75rem;
@@ -334,7 +340,7 @@
   .sliderMain {
     width: 21.75rem;
     height: 33.25rem;
-    gap: 2.5rem;
+    gap: 21.75rem;
   }
   .coffeeSlider1 {
     width: 21.75rem;
@@ -460,8 +466,8 @@
   .contacts {
     width: 23.75rem;
     height: 32.875rem;
-    padding-left: 1rem;
     padding-right: 1rem;
+    margin-top: 6.25rem;
   }
   .contactsMain {
     width: 21.75rem;
@@ -482,8 +488,11 @@
     margin: 0;
   }
   .contactsInfo {
-    width: 35.5rem;
+    width: 19.75rem;
     height: 11.625rem;
+  }
+  .ContactUs {
+    width: 19.75rem;
   }
   .mainSecond {
     width: 23.75rem;

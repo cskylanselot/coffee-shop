@@ -305,6 +305,17 @@ li {
   border-radius: 2.5rem;
   z-index: 1;
 }
+.videoPhone {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  background-image: url(../img/img-hero.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2.5rem;
+  z-index: 1;
+}
 .hero-text {
   width: 33.125rem;
   height: 27.75rem;

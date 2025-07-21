@@ -24,7 +24,12 @@ function startProgressBar() {
   progressBars.forEach((b) => (b.style.width = "0%"));
 
   const controlActive = document.querySelector(".controlActive");
+
+  if (!controlActive) return; // <-- исправление: защита от null
+
   bar = controlActive.querySelector(".progressBar");
+
+  if (!bar) return;
 
   intervalID = setInterval(() => {
     progress++;
@@ -76,11 +81,6 @@ function nextSlide() {
   offset += 50;
   if (offset > 100) offset = 0;
   updateSlider();
-  // if (window.matchMedia("(max-width: 380px)").matches) {
-  //   offset += 21.75;
-  //   if (offset > 65.25) offset = 0;
-  //   updateSlider();
-  // }
 }
 
 function prevSlide() {
@@ -100,6 +100,37 @@ function updateSlider() {
   resetSlider(); // сбросим всё и начнём с начала
 }
 
+// Переключение слайдов
+function nextSlidePhone() {
+  offset += 44;
+  if (offset > 88) offset = 0;
+  updateSliderPhone();
+}
+
+function prevSlidePhone() {
+  offset -= 44;
+  if (offset < 0) offset = 88;
+  updateSliderPhone();
+}
+
+// Обновление позиции и активного индикатора
+function updateSliderPhone() {
+  sliderMain.style.left = -offset + "rem";
+
+  control1.classList.toggle("controlActive", offset === 0);
+  control2.classList.toggle("controlActive", offset === 44);
+  control3.classList.toggle("controlActive", offset === 88);
+
+  resetSliderPhone(); // сбросим всё и начнём с начала
+}
+
+function resetSliderPhone() {
+  clearInterval(avtoSlider);
+  clearInterval(intervalID);
+  avtoSlider = setInterval(nextSlidePhone, 5000);
+  startProgressBar();
+}
+
 // Слушатели
 arrowRight.addEventListener("click", nextSlide);
 arrowLeft.addEventListener("click", prevSlide);
@@ -113,8 +144,13 @@ arrowLeft.addEventListener("mouseout", resumeProgressBar);
 
 // Старт
 function startSlider() {
-  startProgressBar();
-  avtoSlider = setInterval(nextSlide, 5000);
+  if (window.matchMedia("(max-width: 380px)").matches) {
+    startProgressBar();
+    avtoSlider = setInterval(nextSlidePhone, 5000);
+  } else {
+    startProgressBar();
+    avtoSlider = setInterval(nextSlide, 5000);
+  }
 }
 
 startSlider();
@@ -136,6 +172,9 @@ function menuOpen() {
     hero.style.display = "none";
     mainFirst.style.display = "none";
     mainSecond.style.display = "flex";
+    if (window.matchMedia("(max-width: 380px)").matches) {
+      mainContainer.style.height = 208.5 + "rem";
+    }
     flag = false;
   } else {
     header.style.height = 45.25 + "rem";
@@ -156,6 +195,7 @@ burgerListMenuText.addEventListener("click", function () {
 // menu click end
 
 // Coffee Tea Dessert menu
+const mainContainer = document.querySelector(".mainContainer");
 const mainSecond = document.querySelector(".mainSecond");
 const coffeeTabsMain = document.querySelector(".coffeeTabsMain");
 const teaTabsMain = document.querySelector(".teaTabsMain");
