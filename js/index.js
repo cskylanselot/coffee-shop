@@ -177,7 +177,7 @@ function menuOpen() {
     if (window.matchMedia("(max-width: 380px)").matches) {
       mainContainer.style.height = 208.5 + "rem";
     } else if (window.matchMedia("(max-width: 768px)").matches) {
-      mainContainer.style.height = 155 + "rem";
+      mainContainer.style.height = 160 + "rem";
     }
     flag = false;
   } else {
