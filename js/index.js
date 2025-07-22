@@ -157,6 +157,8 @@ startSlider();
 //Конец Slider
 
 // menu click
+const mainContainer = document.querySelector(".mainContainer");
+const mainSecond = document.querySelector(".mainSecond");
 const coffeeMenuMain = document.querySelector(".coffee-menuMain");
 const heroMenu = document.querySelector(".heroMenu");
 const burgerListMenuText = document.querySelector(".burgerListMenuText");
@@ -174,6 +176,8 @@ function menuOpen() {
     mainSecond.style.display = "flex";
     if (window.matchMedia("(max-width: 380px)").matches) {
       mainContainer.style.height = 208.5 + "rem";
+    } else if (window.matchMedia("(max-width: 768px)").matches) {
+      mainContainer.style.height = 155 + "rem";
     }
     flag = false;
   } else {
@@ -195,8 +199,6 @@ burgerListMenuText.addEventListener("click", function () {
 // menu click end
 
 // Coffee Tea Dessert menu
-const mainContainer = document.querySelector(".mainContainer");
-const mainSecond = document.querySelector(".mainSecond");
 const coffeeTabsMain = document.querySelector(".coffeeTabsMain");
 const teaTabsMain = document.querySelector(".teaTabsMain");
 const dessertTabsMain = document.querySelector(".dessertTabsMain");
