@@ -165,12 +165,14 @@ const burgerListMenuText = document.querySelector(".burgerListMenuText");
 const hero = document.querySelector(".hero");
 const header = document.querySelector(".header");
 const StartMenuBack = document.querySelector(".StartMenuBack");
+const StartMenuBurger = document.querySelector(".StartMenuBurger");
 const mainFirst = document.querySelector(".mainFirst");
 let flag = true;
 
 function menuOpen() {
   if (flag) {
     header.style.height = 3.75 + "rem";
+    mainContainer.style.height = 126 + "rem";
     hero.style.display = "none";
     mainFirst.style.display = "none";
     mainSecond.style.display = "flex";
@@ -182,9 +184,15 @@ function menuOpen() {
     flag = false;
   } else {
     header.style.height = 45.25 + "rem";
+    mainContainer.style.height = 274.25 + "rem";
     hero.style.display = "flex";
     mainFirst.style.display = "block";
     mainSecond.style.display = "none";
+    if (window.matchMedia("(max-width: 380px)").matches) {
+      mainContainer.style.height = 291.375 + "rem";
+    } else if (window.matchMedia("(max-width: 768px)").matches) {
+      mainContainer.style.height = 348.5 + "rem";
+    }
     flag = true;
   }
 }
@@ -192,6 +200,7 @@ function menuOpen() {
 coffeeMenuMain.addEventListener("click", menuOpen);
 heroMenu.addEventListener("click", menuOpen);
 StartMenuBack.addEventListener("click", menuOpen);
+StartMenuBurger.addEventListener("click", menuOpen);
 burgerListMenuText.addEventListener("click", function () {
   menuOpen();
   burgerMenu.style.display = "none";
@@ -212,8 +221,10 @@ coffeeTabsMain.addEventListener("click", function () {
   coffeeTabsMain.classList.add("activeTabs");
   teaTabsMain.classList.remove("activeTabs");
   dessertTabsMain.classList.remove("activeTabs");
+  mainContainer.style.height = 126 + "rem";
   mainSecond.style.height = 83 + "rem";
   if (window.matchMedia("(max-width: 768px)").matches) {
+    mainContainer.style.height = 155 + "rem";
     mainSecond.style.height = 98.938 + "rem";
   }
   if (window.matchMedia("(max-width: 380px)").matches) {
@@ -227,8 +238,10 @@ teaTabsMain.addEventListener("click", function () {
   teaTabsMain.classList.add("activeTabs");
   coffeeTabsMain.classList.remove("activeTabs");
   dessertTabsMain.classList.remove("activeTabs");
+  mainContainer.style.height = 92 + "rem";
   mainSecond.style.height = 48.875 + "rem";
   if (window.matchMedia("(max-width: 768px)").matches) {
+    mainContainer.style.height = 149 + "rem";
     mainSecond.style.height = 98.938 + "rem";
   }
   if (window.matchMedia("(max-width: 380px)").matches) {
@@ -242,8 +255,10 @@ dessertTabsMain.addEventListener("click", function () {
   dessertTabsMain.classList.add("activeTabs");
   coffeeTabsMain.classList.remove("activeTabs");
   teaTabsMain.classList.remove("activeTabs");
+  mainContainer.style.height = 126 + "rem";
   mainSecond.style.height = 83 + "rem";
   if (window.matchMedia("(max-width: 768px)").matches) {
+    mainContainer.style.height = 155 + "rem";
     mainSecond.style.height = 98.938 + "rem";
   }
   if (window.matchMedia("(max-width: 380px)").matches) {

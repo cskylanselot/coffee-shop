@@ -20,6 +20,9 @@
     width: 48rem;
     height: 40.25rem;
   }
+  .burgerMenu {
+    right: 0%;
+  }
   .slider {
     width: 48rem;
     height: 54.625rem;
@@ -131,14 +134,17 @@
   .coffeeBuyMenuContainer {
     width: 43rem;
     height: 39.125rem;
+    left: 35%;
   }
   .TeaBuyMenuContainer {
     width: 43rem;
     height: 39.125rem;
+    left: 35%;
   }
   .DessertBuyMenuContainer {
     width: 43rem;
     height: 35.75rem;
+    left: 35%;
   }
   .coffeeBuyMenu {
     width: 41rem;
