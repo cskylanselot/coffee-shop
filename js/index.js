@@ -224,7 +224,7 @@ coffeeTabsMain.addEventListener("click", function () {
   mainContainer.style.height = 126 + "rem";
   mainSecond.style.height = 83 + "rem";
   if (window.matchMedia("(max-width: 768px)").matches) {
-    mainContainer.style.height = 155 + "rem";
+    mainContainer.style.height = 160 + "rem";
     mainSecond.style.height = 98.938 + "rem";
   }
   if (window.matchMedia("(max-width: 380px)").matches) {
@@ -241,7 +241,7 @@ teaTabsMain.addEventListener("click", function () {
   mainContainer.style.height = 92 + "rem";
   mainSecond.style.height = 48.875 + "rem";
   if (window.matchMedia("(max-width: 768px)").matches) {
-    mainContainer.style.height = 149 + "rem";
+    mainContainer.style.height = 160 + "rem";
     mainSecond.style.height = 98.938 + "rem";
   }
   if (window.matchMedia("(max-width: 380px)").matches) {
@@ -258,7 +258,7 @@ dessertTabsMain.addEventListener("click", function () {
   mainContainer.style.height = 126 + "rem";
   mainSecond.style.height = 83 + "rem";
   if (window.matchMedia("(max-width: 768px)").matches) {
-    mainContainer.style.height = 155 + "rem";
+    mainContainer.style.height = 160 + "rem";
     mainSecond.style.height = 98.938 + "rem";
   }
   if (window.matchMedia("(max-width: 380px)").matches) {
