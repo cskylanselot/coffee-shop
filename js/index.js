@@ -215,7 +215,10 @@ function menuOpen() {
 coffeeMenuMain.addEventListener("click", menuOpen);
 heroMenu.addEventListener("click", menuOpen);
 StartMenuBack.addEventListener("click", menuOpen);
-StartMenuBurger.addEventListener("click", menuOpen);
+StartMenuBurger.addEventListener("click", function () {
+  menuOpen();
+  burgerMenu.style.display = "none";
+});
 burgerListMenuText.addEventListener("click", function () {
   menuOpen();
   burgerMenu.style.display = "none";
