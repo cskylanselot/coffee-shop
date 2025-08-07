@@ -132,8 +132,21 @@ function resetSliderPhone() {
 }
 
 // Слушатели
-arrowRight.addEventListener("click", nextSlide);
-arrowLeft.addEventListener("click", prevSlide);
+arrowRight.addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 380px)").matches) {
+    nextSlidePhone();
+  } else {
+    nextSlide();
+  }
+});
+
+arrowLeft.addEventListener("click", () => {
+  if (window.matchMedia("(max-width: 380px)").matches) {
+    prevSlidePhone();
+  } else {
+    prevSlide();
+  }
+});
 
 sliderMain.addEventListener("mouseover", pauseProgressBar);
 sliderMain.addEventListener("mouseout", resumeProgressBar);
@@ -144,13 +157,15 @@ arrowLeft.addEventListener("mouseout", resumeProgressBar);
 
 // Старт
 function startSlider() {
+  offset = 0;
   if (window.matchMedia("(max-width: 380px)").matches) {
-    startProgressBar();
+    updateSliderPhone();
     avtoSlider = setInterval(nextSlidePhone, 5000);
   } else {
-    startProgressBar();
+    updateSlider();
     avtoSlider = setInterval(nextSlide, 5000);
   }
+  startProgressBar();
 }
 
 startSlider();
